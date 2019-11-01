@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+
+
+body {
+  background: black;
+  color: white;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+nav {
+  font-family:"DK Lemon Yellow Sun";
+  font-size: 45px;
+}
+
+
+
+ul.Paginas {
+ display: flex;
+ flex-direction:row;
+ justify-content: space-between;
+
+}
+
+.Paginas li {
+  width: 60px;
+}
+
+.Paginas a {
+  color:#1BF3A8;
+}
+
+div.alumnos ul {
+  color: grey;
+  font-family:"DK Lemon Yellow Sun";
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  position: relative;
+  left: 30px;
+
+}
+
+div.alumnos ul li {
+  padding: 15px;
+}
+
+div.buscador {
+  position: relative;
+  top: 55px;
+}
+
+.logo img {
+  width: 115px;
+  position: relative;
+  top: 13px;
+}
+
+.TMDB img {
+  width: 100px;
+  position: relative;
+  right: -970px;
+  top: 30%;
+
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+
+}
