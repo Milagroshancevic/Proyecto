@@ -26,8 +26,9 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  background-color: rgba(197,197,197, 0.1);
+  background-color: rgba(197,197,197, 0.2);
   width: 100%;
+
 
 }
 
@@ -89,9 +90,10 @@ input .busqueda {
 
 
 .logo img {
-  width: 115px;
+  width: 20%;
   position: relative;
-  top: 13px;
+  top: 1%;
+  margin: 1.5%;
 }
 .TMDB {
  position: relative;
