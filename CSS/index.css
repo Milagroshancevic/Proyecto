@@ -28,7 +28,7 @@ header {
   justify-content: space-around;
   background-color: rgba(246,152,24, 0.3);
   width: 100%;
-  
+
 
 
 }
@@ -101,9 +101,13 @@ input .busqueda {
 .TMDB img {
   width: 100px;
   position: relative;
-  right: -970px;
-  top: 30%;
+  top:40%;
 
+}
+
+.TMDB {
+  position: relative;
+  left: 60%;
 }
 
 footer {
