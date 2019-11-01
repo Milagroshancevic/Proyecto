@@ -31,7 +31,7 @@ header {
 
 nav {
   font-family:"Helvetica";
-  font-size: 45px;
+  font-size: 25px;
 }
 
 
@@ -44,11 +44,18 @@ ul.Paginas {
 }
 
 .Paginas li {
-  width: 60px;
+  width: 15%
+  padding:3%;
+  margin:5%;
+  position: relative;
+  top:4%;
+  right: 18%;
+
 }
 
 .Paginas a {
   color:#1BF3A8;
+  font-size: 25px;
 }
 
 div.alumnos ul {
@@ -67,9 +74,14 @@ div.alumnos ul li {
   padding: 15px;
 }
 
-div.buscador {
+#FormBus {
   position: relative;
-  top: 55px;
+  top: 115px;
+
+}
+
+input .busqueda {
+  width: 20%;
 
 }
 
