@@ -93,12 +93,16 @@ input .busqueda {
   position: relative;
   top: 13px;
 }
+.TMDB {
+ position: relative;
+ left:60%
 
+}
 .TMDB img {
   width: 100px;
   position: relative;
-  right: -970px;
-  top: 30%;
+  top: 40%;
+
 
 }
 
@@ -106,5 +110,6 @@ footer {
   display: flex;
   flex-direction: row;
   position: relative;
+  width: 100%;
 
 }
