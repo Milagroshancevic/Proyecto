@@ -26,14 +26,15 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  background-color: rgba(197,197,197, 0.2);
+  background-color: rgba(246,152,24, 0.3);
   width: 100%;
+  
 
 
 }
 
 nav {
-  font-family:"Helvetica";
+  font-family:"Arial";
   font-size: 25px;
 }
 
@@ -57,13 +58,13 @@ ul.Paginas {
 }
 
 .Paginas a {
-  color:#1BF3A8;
+  color:black;
   font-size: 25px;
 }
 
 div.alumnos ul {
   color: grey;
-  font-family:"Helvetica";
+  font-family:"Arial";
   font-size: 20px;
   display: flex;
   flex-direction: row;
@@ -75,6 +76,7 @@ div.alumnos ul {
 
 div.alumnos ul li {
   padding: 15px;
+  color:black;
 }
 
 #FormBus {
@@ -95,16 +97,12 @@ input .busqueda {
   top: 1%;
   margin: 1.5%;
 }
-.TMDB {
- position: relative;
- left:60%
 
-}
 .TMDB img {
   width: 100px;
   position: relative;
-  top: 40%;
-
+  right: -970px;
+  top: 30%;
 
 }
 
@@ -112,6 +110,8 @@ footer {
   display: flex;
   flex-direction: row;
   position: relative;
+  background-color: rgba(246,152,24, 0.3);
   width: 100%;
+
 
 }
