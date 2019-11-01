@@ -41,9 +41,27 @@ header {
   margin: 1.5%;
 }
 
+.logo{
+  width: 8%;
+
+}
+.logo img {
+  width: 100%;
+  position: relative;
+  top: 1%;
+  margin: 1.5%;
+}
+
 nav {
   font-family:"Arial";
   font-size: 25px;
+<<<<<<< Updated upstream
+=======
+  width: 70%;
+  position: relative;
+  left: 14%;
+}
+>>>>>>> Stashed changes
 
 }
 
@@ -102,6 +120,10 @@ input .busqueda {
 }
 
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 .TMDB img {
   width: 100px;
   position: relative;
