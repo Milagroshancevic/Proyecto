@@ -26,8 +26,9 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  background-color: rgba(246,152,24, 0.3);
+  background-color: rgba(252,245,13, 0.8);
   width: 100%;
+  position: fixed;
 
 
 
@@ -83,19 +84,19 @@ ul.Paginas {
 
 .Paginas li:nth-child(2) {
   position: relative;
-  left: 45%;
+  left: 33%;
 }
 
 .Paginas li:nth-child(3) {
   position: relative;
-  left:20%;
+  left:8%;
 }
 
 .buscador-form {
   position: relative;
-  right: 400%;
+  right: 370%;
   top: 23%;
-  width: 300%;
+  width: 250%;
   height: 50%
 }
 
@@ -103,7 +104,7 @@ ul.Paginas {
   width:80%;
   height: 100%;
   border-radius: 10px;
-  border: solid rgba(246, 152, 24, 0.5) 0.5px ;
+  border-width: 0px;
 
 }
 
@@ -118,10 +119,39 @@ ul.Paginas {
   border-radius: 15%;
   margin-left: 2.5%;
   height: 100%;
-  background-color: orange;
-  border-width: 0px;
+  background-color:  white;
+  border-width: medium;
   font-family: cursive;
   font-weight: bold;
+  border-color: black;
+}
+
+.login{
+  position: relative;
+  right: 7%;
+  width: 6%;
+
+}
+
+#button-login{
+  /* padding-top: 15%;
+  padding-bottom: 15%;
+  padding-left: 20%;
+  padding-right: 20%; */
+  padding: 15%;
+  position: relative;
+  left: 5%;
+  top: 27%;
+  width: 100%;
+  border-radius: 10px;
+  background-color: white;
+  border-width: medium;
+  border-color: black;
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+
 }
 
 
@@ -129,7 +159,7 @@ ul.Paginas {
 
 
 
-
+ /* footer */
 div.alumnos ul {
   color: grey;
   font-family:"Arial";
@@ -159,10 +189,6 @@ input .busqueda {
 }
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> master
 .TMDB img {
   width: 100px;
   position: relative;
@@ -178,9 +204,10 @@ input .busqueda {
 footer {
   display: flex;
   flex-direction: row;
-  position: relative;
-  background-color: rgba(246,152,24, 0.3);
+  position: absolute;
+  background-color: rgba(252,245,13, 0.7);
   width: 100%;
+  top: 100%;
 
 
 }
