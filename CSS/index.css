@@ -30,8 +30,6 @@ header {
   width: 100%;
   position: fixed;
 
-
-
 }
 
 nav {
@@ -155,10 +153,6 @@ ul.Paginas {
 }
 
 
-
-
-
-
  /* footer */
 div.alumnos ul {
   color: grey;
@@ -190,15 +184,16 @@ input .busqueda {
 
 
 .TMDB img {
-  width: 100px;
+  width: 150px;
   position: relative;
-  top:40%;
+  top:22%;
 
 }
 
 .TMDB {
   position: relative;
   left: 60%;
+
 }
 
 footer {
