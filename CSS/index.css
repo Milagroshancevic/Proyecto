@@ -18,7 +18,7 @@ a:hover{
 
 
 body {
- background: black;
+ background-color:#1E1A19;
   color: white;
 }
 
@@ -99,10 +99,13 @@ ul.Paginas {
 }
 
 #busqueda-input {
-  width:80%;
+  width:85%;
   height: 100%;
   border-radius: 10px;
   border-width: 0px;
+  position: relative;
+  right: 65%;
+  
 
 }
 
@@ -122,6 +125,8 @@ ul.Paginas {
   font-family: cursive;
   font-weight: bold;
   border-color: black;
+  position: relative;
+  right: 60%;
 }
 
 .login{
@@ -154,6 +159,8 @@ ul.Paginas {
 
 
  /* footer */
+
+
 div.alumnos ul {
   color: grey;
   font-family:"Arial";
@@ -184,15 +191,16 @@ input .busqueda {
 
 
 .TMDB img {
-  width: 150px;
+  width: 100%;
   position: relative;
-  top:22%;
+  top:18%;
 
 }
 
 .TMDB {
   position: relative;
   left: 60%;
+  width: 12%;
 
 }
 
