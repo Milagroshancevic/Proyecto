@@ -13,12 +13,12 @@ window.onload = function () {
       listaire.innerHTML += '<p>' + seriesAire[i].name + '</p>' + '<img src="' + "https://image.tmdb.org/t/p/original/" + datos.results[i].backdrop_path + '">'
     }
 
-    var posters= datos.results;
-    var posteraire = document.querySelector(".posteraire");
-
-    for (var i = 0; i < seriesAire.length; i++) {
-      posteraire.innerHTML += '<img src="' + "https://image.tmdb.org/t/p/original/" + datos.results[i].backdrop_path + '">'
-    }
+    // var posters= datos.results;
+    // var posteraire = document.querySelector(".posteraire");
+    //
+    // for (var i = 0; i < seriesAire.length; i++) {
+    //   posteraire.innerHTML += '<img src="' + "https://image.tmdb.org/t/p/original/" + datos.results[i].backdrop_path + '">'
+    // }
 
 
       //console.log(seriesAire[i].name)
@@ -43,6 +43,20 @@ window.onload = function () {
 
 
 
+fetch ("https://api.themoviedb.org/3/tv/top_rated?api_key=4c34fda4463cc4b5610955320cdc1b52&page=1")
+.then(function(respuestaP){
+return respuestaP.json();
+})
+.then(function(datosP){
+var seriesP = datosP.results;
+var listaP= document.querySelector(".listaP");
+//console.log(seriesMP);
+
+for(var i=0; i<seriesP.length; i++) {
+  listaP.innerHTML += '<p>' + seriesP[i].name + '</p>' + '<img src="' + "https://image.tmdb.org/t/p/original/" + seriesP[i].backdrop_path + '">'
+}
+
+})
 
 
 
