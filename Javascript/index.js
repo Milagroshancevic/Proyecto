@@ -13,27 +13,35 @@ window.onload = function () {
       listaire.innerHTML += '<p>' + seriesAire[i].name + '</p>' + '<img src="' + "https://image.tmdb.org/t/p/original/" + datos.results[i].backdrop_path + '">'
     }
 
-    var posters= datos.results;
-    var posteraire = document.querySelector(".posteraire");
-
-    for (var i = 0; i < seriesAire.length; i++) {
-      posteraire.innerHTML += '<img src="' + "https://image.tmdb.org/t/p/original/" + datos.results[i].backdrop_path + '">' 
-    }
+    // var posters= datos.results;
+    // var posteraire = document.querySelector(".posteraire");
+    //
+    // for (var i = 0; i < seriesAire.length; i++) {
+    //   listaire.innerHTML += '<img src="' + "https://image.tmdb.org/t/p/original/" + datos.results[i].backdrop_path + '">'
+    // }
 
 
       //console.log(seriesAire[i].name)
 
-
-
-
-
-
-
-
   })
 
 
+// mejores puntuadas
 
+fetch ("https://api.themoviedb.org/3/tv/top_rated?api_key=4c34fda4463cc4b5610955320cdc1b52&page=1")
+.then(function(respuestaMP){
+  return respuestaMP.json();
+})
+.then(function(datosMP){
+  var seriesMP = datosMP.results;
+  var listaMP= document.querySelector(".listaMP");
+  //console.log(seriesMP);
+
+  for(var i=0; i<seriesMP.length; i++) {
+    listaMP.innerHTML += '<p>' + seriesMP[i].name + '</p>' + '<img src="' + "https://image.tmdb.org/t/p/original/" + seriesMP[i].backdrop_path + '">'
+  }
+
+})
 
 
 
@@ -72,9 +80,6 @@ return respuestaP.json();
 
   }
 })
-
-
-
 
 
 
