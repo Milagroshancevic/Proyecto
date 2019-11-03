@@ -175,12 +175,24 @@ ul.Paginas {
   display: flex;
 }
 
+.listaMP p {
+  font-family: "Arial";
+  font-size: 20px;
+  font-weight: bold;
+}
+
 .listaMP img{
   width: 20%;
 }
 
 .listaP {
   display: flex;
+}
+
+.listaP p {
+  font-family: "Arial";
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .listaP img {
