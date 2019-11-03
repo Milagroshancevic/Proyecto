@@ -171,6 +171,22 @@ ul.Paginas {
   width: 20%;
 }
 
+.listaMP {
+  display: flex;
+}
+
+.listaMP img{
+  width: 20%;
+}
+
+.listaP {
+  display: flex;
+}
+
+.listaP img {
+  width: 20%;
+}
+
  /* footer */
 
 
