@@ -157,6 +157,19 @@ ul.Paginas {
 
 }
 
+/* Al aire hoy */
+.listaire {
+  display: flex;
+}
+.listaire p {
+  font-family: "Arial";
+  font-size:20px;
+  font-weight: bold;
+}
+
+.listaire img {
+  width: 20%;
+}
 
  /* footer */
 
@@ -188,17 +201,6 @@ input .busqueda {
   width: 20%;
 
 }
-
-
-
-.listaire img {
-  width: 20%;
-}
-
-
-
-
-
 
 
 
