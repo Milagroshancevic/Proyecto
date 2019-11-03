@@ -105,7 +105,7 @@ ul.Paginas {
   border-width: 0px;
   position: relative;
   right: 65%;
-  
+
 
 }
 
@@ -190,6 +190,18 @@ input .busqueda {
 }
 
 
+
+.listaire img {
+  width: 20%;
+}
+
+
+
+
+
+
+
+
 .TMDB img {
   width: 100%;
   position: relative;
@@ -207,10 +219,9 @@ input .busqueda {
 footer {
   display: flex;
   flex-direction: row;
-  position: absolute;
+  position: relative;
   background-color: rgba(252,245,13, 0.7);
   width: 100%;
   top: 100%;
-
 
 }

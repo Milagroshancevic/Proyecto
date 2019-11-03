@@ -10,27 +10,12 @@ window.onload = function () {
     //console.log(seriesAire);
 
     for(var i=0; i<seriesAire.length; i++) {
-      listaire.innerHTML += '<p>' + seriesAire[i].name + '</p>'
+      listaire.innerHTML += '<p>' + seriesAire[i].name + '</p>' + '<img src="' + "https://image.tmdb.org/t/p/original/" + datos.results[i].backdrop_path + '">'
     }
-
-    var posters= datos.results;
-    var posteraire = document.querySelector(".posteraire");
-
-    for (var i = 0; i < seriesAire.length; i++) {
-      posteraire.innerHTML += '<img src="' + "https://image.tmdb.org/t/p/original/" + datos.results[i].backdrop_path + '">' 
-    }
-
-
-      //console.log(seriesAire[i].name)
-
-
-
-
-
-
-
 
   })
+
+  
 
 
 
