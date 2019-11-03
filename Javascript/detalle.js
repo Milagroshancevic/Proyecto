@@ -4,20 +4,18 @@ window.onload = function (){
   .then(function(respuestaA){
     return respuestaA.json();
   })
-  .then function(datosA){
-    var aire= datos.results;
+  .then(function(datosA){
+    var aire= datosA.results;
     var detalleA= document.querySelector(".detalleA");
 
 
     for(var i=0; i<aire.lenght;i++) {
-      aire.innerHTML += '<li>' + aire[i].name + '</li>' + '<li>'+ aire[i].genre_ids+ '</li>' + '<li>'+ aire[i].original_language + '</li>' + '<li>'+ aire[i].overview + '</li>' + '<li>'+ aire[i].first_air_date + '</li>' + '<li>'+'<img src="' + "https://image.tmdb.org/t/p/original/" + aire[i].poster_path +'</li>' + '<li>'+ '<input class="reco" type="button" value="recomendaciones" name="r">' + '<label for="r">' Ver recomendaciones + '</label>' + '</input>' + '</li>'
+      aire.innerHTML += '<li>' + aire[i].name + '</li>' + '<li>'+ aire[i].genre_ids+ '</li>' + '<li>'+ aire[i].original_language + '</li>' + '<li>'+ aire[i].overview + '</li>' + '<li>'+ aire[i].first_air_date + '</li>' + '<li>'+'<img src="' + "https://image.tmdb.org/t/p/original/" + aire[i].poster_path +'</li>'
+      //+ '<li>'+ '<input class="reco" type="button" value="recomendaciones" name="r">' + '<label for="r">' Ver recomendaciones + '</label>' + '</input>' + '</li>'
 
     }
 
-
-
-
-  }
+  })
 
 
 
