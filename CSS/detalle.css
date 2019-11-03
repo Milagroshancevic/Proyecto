@@ -163,14 +163,14 @@ ul.Paginas {
   font-family: "Arial";
   font-size:20px;
   font-weight: bold;
-  display: none;
+  
 }
 
 .detalleMP p {
   font-family: "Arial";
   font-size:20px;
   font-weight: bold;
-  display: none;
+
 }
 .detalleMP img {
   width: 20%;
@@ -180,7 +180,7 @@ ul.Paginas {
   font-family: "Arial";
   font-size:20px;
   font-weight: bold;
-  display: none;
+
 }
 
 .detalleP img {
