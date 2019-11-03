@@ -19,14 +19,14 @@ a:hover{
 
 body {
  background-color:#1E1A19;
-  color: white;
+
 }
 
 header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  background-color: rgba(252,245,13, 0.8);
+  background-color: rgba(44,252,167, 0.7);
   width: 100%;
   position: fixed;
 
@@ -157,42 +157,97 @@ ul.Paginas {
 
 }
 
+/* Secion series*/
+.titulo1 {
+  font-family: "Arial";
+  font-size: 45px;
+  text-align: center;
+  color: white;
+
+
+}
+.titulos {
+  font-family: "Arial";
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color:#2CFCA7;
+
+}
+
 /* Al aire hoy */
 .listaire {
   display: flex;
+  position: relative;
 }
 .listaire p {
   font-family: "Arial";
   font-size:20px;
   font-weight: bold;
+  /*position: absolute;
+  left: 5%;
+  top:60%;
+  background-color: rgba(255,255,255, 0.7);
+  color: black;
+  border-radius: 20px;
+  padding-bottom: 0.5%;
+  padding-top: 0.5%;
+  padding-left: 0.7%;
+  padding-right: 0.7%;*/
+
+
 }
 
 .listaire img {
   width: 20%;
 }
 
+/* Mejores puntuadas*/
 .listaMP {
   display: flex;
+  position: relative;
 }
 
 .listaMP p {
   font-family: "Arial";
   font-size: 20px;
   font-weight: bold;
+  /*position: absolute;
+  left: 5%;
+  top:60%;
+  background-color: rgba(255,255,255, 0.7);
+  color: black;
+  border-radius: 20px;
+  padding-bottom: 0.5%;
+  padding-top: 0.5%;
+  padding-left: 0.7%;
+  padding-right: 0.7%;*/
 }
 
 .listaMP img{
   width: 20%;
 }
 
+/*Populares */
 .listaP {
   display: flex;
+  position: relative;
 }
 
 .listaP p {
   font-family: "Arial";
   font-size: 20px;
   font-weight: bold;
+  /*position: absolute;
+  left: 5%;
+  top:60%;
+  background-color: rgba(255,255,255, 0.7);
+  color: black;
+  border-radius: 20px;
+  padding-bottom: 0.5%;
+  padding-top: 0.5%;
+  padding-left: 0.7%;
+  padding-right: 0.7%;*/
 }
 
 .listaP img {
@@ -250,7 +305,7 @@ footer {
   display: flex;
   flex-direction: row;
   position: relative;
-  background-color: rgba(252,245,13, 0.7);
+  background-color: rgba(44,252,167, 0.7);
   width: 100%;
   top: 100%;
 
