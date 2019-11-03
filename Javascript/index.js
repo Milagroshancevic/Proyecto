@@ -43,7 +43,7 @@ window.onload = function () {
 
 
 
-fetch ("https://api.themoviedb.org/3/tv/top_rated?api_key=4c34fda4463cc4b5610955320cdc1b52&page=1")
+fetch ("https://api.themoviedb.org/3/tv/popular?api_key=4c34fda4463cc4b5610955320cdc1b52&page=1")
 .then(function(respuestaP){
 return respuestaP.json();
 })
