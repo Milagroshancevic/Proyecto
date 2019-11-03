@@ -10,7 +10,7 @@ window.onload = function () {
     //console.log(seriesAire);
 
     for(var i=0; i<seriesAire.length; i++) {
-      listaire.innerHTML += '<p>' + seriesAire[i].name + '</p>' + '<img src="' + "https://image.tmdb.org/t/p/original/" + datos.results[i].backdrop_path + '">'
+      listaire.innerHTML += '<p>' + seriesAire[i].name + '</p>' + '<img src="' + "https://image.tmdb.org/t/p/original/" + datos.results[i].poster_path + '">'
     }
 
     // var posters= datos.results;
@@ -36,7 +36,7 @@ window.onload = function () {
   //console.log(seriesMP);
 
   for(var i=0; i<seriesMP.length; i++) {
-    listaMP.innerHTML += '<p>' + seriesMP[i].name + '</p>' + '<img src="' + "https://image.tmdb.org/t/p/original/" + seriesMP[i].backdrop_path + '">'
+    listaMP.innerHTML += '<p>' + seriesMP[i].name + '</p>' + '<img src="' + "https://image.tmdb.org/t/p/original/" + seriesMP[i].poster_path + '">'
   }
 
 })
@@ -53,7 +53,7 @@ var listaP= document.querySelector(".listaP");
 //console.log(seriesMP);
 
 for(var i=0; i<seriesP.length; i++) {
-  listaP.innerHTML += '<p>' + seriesP[i].name + '</p>' + '<img src="' + "https://image.tmdb.org/t/p/original/" + seriesP[i].backdrop_path + '">'
+  listaP.innerHTML += '<p>' + seriesP[i].name + '</p>' + '<img src="' + "https://image.tmdb.org/t/p/original/" + seriesP[i].poster_path + '">'
 }
 
 })

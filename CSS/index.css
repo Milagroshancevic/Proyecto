@@ -184,6 +184,7 @@ ul.Paginas {
   font-family: "Arial";
   font-size:20px;
   font-weight: bold;
+  display: none;
   /*position: absolute;
   left: 5%;
   top:60%;
@@ -212,6 +213,7 @@ ul.Paginas {
   font-family: "Arial";
   font-size: 20px;
   font-weight: bold;
+  display: none;
   /*position: absolute;
   left: 5%;
   top:60%;
@@ -231,13 +233,14 @@ ul.Paginas {
 /*Populares */
 .listaP {
   display: flex;
-  position: relative;
+  
 }
 
 .listaP p {
   font-family: "Arial";
   font-size: 20px;
   font-weight: bold;
+  display: none;
   /*position: absolute;
   left: 5%;
   top:60%;
