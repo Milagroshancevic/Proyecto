@@ -158,6 +158,10 @@ ul.Paginas {
 }
 
 /* Secion series*/
+.series {
+  width: 100%;
+}
+
 .titulo1 {
   font-family: "Arial";
   font-size: 45px;
@@ -233,7 +237,7 @@ ul.Paginas {
 /*Populares */
 .listaP {
   display: flex;
-  
+
 }
 
 .listaP p {
