@@ -69,6 +69,7 @@ ul.Paginas {
   padding:3%;
   margin:1.5%;
   position: relative;
+  left: 4%;
   /* top:4%;
   right: 18%; */
 
@@ -90,16 +91,25 @@ ul.Paginas {
   left:8%;
 }
 
+.buscador {
+  position: relative;
+  top: 40%;
+  right: 30%;
+}
+
+
+
+
 .buscador-form {
   position: relative;
-  right: 370%;
-  top: 23%;
+  /* right: 370%; */
+  top: 32%;
   width: 250%;
-  height: 50%
+  height: 30%
 }
 
 #busqueda-input {
-  width:85%;
+  width:70%;
   height: 100%;
   border-radius: 10px;
   border-width: 0px;
@@ -110,8 +120,8 @@ ul.Paginas {
 }
 
 #busqueda-input::-webkit-input-placeholder {
-  font-size: 25px;
-  font-family: cursive;
+  font-size: 15px;
+  font-family: Arial;
   text-align: center;
 }
 
@@ -121,12 +131,13 @@ ul.Paginas {
   margin-left: 2.5%;
   height: 100%;
   background-color:  white;
-  border-width: medium;
-  font-family: cursive;
+  /* border-width: medium; */
+  font-family: Arial;
   font-weight: bold;
-  border-color: black;
+  /* border-color: black; */
   position: relative;
-  right: 60%;
+  right: 64%;
+  border-width: thin;
 }
 
 .login{
@@ -148,12 +159,13 @@ ul.Paginas {
   width: 100%;
   border-radius: 10px;
   background-color: white;
-  border-width: medium;
-  border-color: black;
-  font-family: cursive;
+  /* border-width: medium; */
+  /* border-color: black; */
+  font-family: Arial;
   font-weight: bold;
   font-size: 15px;
   text-align: center;
+  border-width: thin;
 
 }
 
