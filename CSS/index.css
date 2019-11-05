@@ -26,16 +26,14 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  background-color: rgba(44,252,167, 0.7);
+  background-color: rgba(0,0,0, 0.7);
   width: 100%;
   position: fixed;
+  height: 85px;
 
 }
 
-nav {
-  font-family:"Arial";
-  font-size: 25px;
-}
+
 .logo{
   width: 8%;
 
@@ -76,7 +74,7 @@ ul.Paginas {
 }
 
 .Paginas a {
-  color:black;
+  color:white;
   font-size: 25px;
 
 }
@@ -93,7 +91,7 @@ ul.Paginas {
 
 .buscador {
   position: relative;
-  top: 40%;
+  top: -3%;
   right: 30%;
 }
 
@@ -155,7 +153,7 @@ ul.Paginas {
   padding: 15%;
   position: relative;
   left: 5%;
-  top: 27%;
+  top: 25%;
   width: 100%;
   border-radius: 10px;
   background-color: white;
@@ -275,11 +273,21 @@ ul.Paginas {
 
  /* footer */
 
+ footer {
+   display: flex;
+   flex-direction: row;
+   position: relative;
+   background-color: rgba(0,0,0, 0.7);
+   width: 100%;
+   top: 100%;
+
+ }
+
 
 div.alumnos ul {
   color: grey;
   font-family:"Arial";
-  font-size: 20px;
+  font-size: 18px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -290,26 +298,28 @@ div.alumnos ul {
 
 div.alumnos ul li {
   padding: 15px;
-  color:black;
+  color:white;
 }
 
-#FormBus {
+.Contacto {
+  font-family: Arial;
+  color: white;
+  font-size: 15px;
   position: relative;
-  top: 115px;
-
+  top: 20px;
 }
 
-input .busqueda {
-  width: 20%;
+/* .fab {
+  position: relative;
+  bottom: 1%;
 
-}
-
-
+} */
 
 .TMDB img {
-  width: 100%;
+  width: 75%;
   position: relative;
-  top:18%;
+  top:26%;
+  left: 8%
 
 }
 
@@ -317,15 +327,5 @@ input .busqueda {
   position: relative;
   left: 60%;
   width: 12%;
-
-}
-
-footer {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  background-color: rgba(44,252,167, 0.7);
-  width: 100%;
-  top: 100%;
 
 }
