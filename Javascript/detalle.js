@@ -30,7 +30,7 @@ fetch("https://api.themoviedb.org/3/tv/"+ idDetalle +"?api_key=4c34fda4463cc4b56
           detalles +=  '<p>' + "Lenguaje original: " + datosDetalle.original_language + '</p>';
           detalles +=  '<p>' + datosDetalle.first_air_date + '</p>';
           detalles +=  '<br>';
-          detalles +=  '<button class="button-reco"type="button" name="recom">'+ "Ver recomendaciones" + '</button>';
+          detalles +=  '<button onclick="myFunction()" class="button-reco"type="button" name="recom">'+ "Ver recomendaciones" + '</button>';
  details.innerHTML+= detalles;
 
   })
@@ -55,39 +55,12 @@ fetch("https://api.themoviedb.org/3/tv/"+ idDetalle +"?api_key=4c34fda4463cc4b56
 })
 
 
-
-
-
-
-
-
-
-//
-//   fetch("https://api.themoviedb.org/3/tv/"+  +"?api_key=4c34fda4463cc4b5610955320cdc1b52")
-//   .then(function(respuestaDetalle){
-//     return respuestaDetalle.json();
-//   })
-//   .then(function(datosDetalle){
-//     var details = document.querySelector(".details");
-//
-//     for(i=0;i<detalle.length;i++){
-//       details.innerHTML+= '<p>' + datosDetalle[i].name + '</p>' + '<p>'+ "Genero: " +  detalle[i].genre_ids + '</p>' + '<p>' + "Lenguaje: " + detalle[i].original_language + '</p>' + '<p>' + detalle[i].overview + '</p>'+ '<p>' + detalle[i].first_air_date + '</p>'  + '<img src="' + "https://image.tmdb.org/t/p/original/" + detalle[i]._path +'" >' + '<br>'+ '<button class="button-reco"type="button" name="recom">'+ "Ver recomendaciones" + '</button>'
-//       }
-//
-// })
-//
-//
-
-
-
 // boton recomendaciones
 
-// var recoSeries = document.querySelector(".button-reco")
-// console.log(recoSeries);
-//   recoSeries.onclick = function() {
-//
-//
-// }
+
+function myFunction() {
+  alert("hola");
+}
 
 
 
