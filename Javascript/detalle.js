@@ -17,18 +17,18 @@ fetch("https://api.themoviedb.org/3/tv/"+ idDetalle +"?api_key=4c34fda4463cc4b56
   var genres = datosDetalle.genres;
  console.log(datosDetalle);
 
-      var detalles =   '<p>' + datosDetalle.name + '</p>';
+      var detalles =   '<p class="nomDetalle">' + datosDetalle.name + '</p>';
             var ulGenres = "<ul>"
             for(var i=0;i<genres.length;i++){
                ulGenres+= '<li class="id-detalles">' + genres[i].id +'</li>' +
-               '<li>'+ '<a href="series.html?id=">' + genres[i].name + '</a>' +"</li>"
+               '<li class="listaGen">'+ '<a href="series.html?id=">' + genres[i].name + '</a>' +"</li>"
              }
               ulGenres += "</ul>"
           detalles += ulGenres;
           detalles +=  '<p>' + "Lenguaje original: " + datosDetalle.original_language + '</p>';
           detalles +=  '<p>' + datosDetalle.overview + '</p>';
           detalles +=  '<p>' + datosDetalle.first_air_date + '</p>';
-          detalles +=  '<img class"imagen-detalles" src="' + "https://image.tmdb.org/t/p/original/" + datosDetalle.poster_path +'" >' ;
+          detalles +=  '<img class="imagen-detalles" src="' + "https://image.tmdb.org/t/p/original/" + datosDetalle.poster_path +'" >' ;
           detalles +=  '<br>';
           detalles +=  '<button class="button-reco"type="button" name="recom">'+ "Ver recomendaciones" + '</button>';
  details.innerHTML+= detalles;

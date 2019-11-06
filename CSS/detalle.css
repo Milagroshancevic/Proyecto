@@ -11,6 +11,11 @@ li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 a:hover{
   text-decoration: underline;
 }
@@ -20,6 +25,7 @@ body {
   color:white;
 }
 
+/*HEADER*/
 header {
   display: flex;
   flex-wrap: wrap;
@@ -165,37 +171,33 @@ ul.Paginas {
 }
 
 
-/* SERIES */
-.detalleA img {
-  width: 20%;
-}
+/* SERIES DESCRIPCION */
 
-.detalleA p {
+
+.descripcion {
   font-family: "Arial";
-  font-size:20px;
-  font-weight: bold;
-
+  font-size: 45px;
+  text-align: center;
 }
 
-.detalleMP p {
+.nomDetalle {
+  font-size: 30px;
+  color:#2CFCA7;
+  text-decoration: underline;
+}
+
+.details {
   font-family: "Arial";
-  font-size:20px;
-  font-weight: bold;
-
-}
-.detalleMP img {
-  width: 20%;
+  font-size: 20px;
+  width: 100%;
 }
 
-.detalleP p {
-  font-family: "Arial";
-  font-size:20px;
-  font-weight: bold;
-
+.id-detalles {
+  display: none;
 }
 
-.detalleP img {
-  width: 20%;
+.imagen-detalles {
+  width: 40%;
 }
 
 
