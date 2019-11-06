@@ -29,10 +29,12 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  background-color: rgba(0,0,0, 0.7);
+  background-color: rgba(0,0,0, 0.8);
   width: 100%;
   position: fixed;
   height: 85px;
+  top: 0%;
+  z-index: 1000;
 
 }
 
@@ -206,10 +208,11 @@ ul.Paginas {
 footer {
   display: flex;
   flex-direction: row;
-  position: relative;
+  position: absolute;
   background-color: rgba(0,0,0, 0.7);
   width: 100%;
   top: 100%;
+
 
 }
 
