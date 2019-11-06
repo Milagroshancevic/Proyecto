@@ -193,6 +193,7 @@ ul.Paginas {
 .listaire {
   display: flex;
   position: relative;
+  /*width: 100%;*/
 }
 .listaire p {
   font-family: "Arial";
@@ -213,9 +214,13 @@ ul.Paginas {
 
 }
 
-.listaire img {
-width: 20%;
+.alDetalle {
+width: 30%;
 }
+.listaire img {
+width: 100%;
+}
+
 
 /* Mejores puntuadas*/
 .listaMP {

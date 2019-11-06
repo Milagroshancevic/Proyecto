@@ -10,22 +10,14 @@ window.onload = function () {
     //console.log(seriesAire);
 
     for(var i=0; i<seriesAire.length; i++) {
-      listaire.innerHTML += '<p>' + seriesAire[i].name + '</p>' + '<img src="' + "https://image.tmdb.org/t/p/original/" + datos.results[i].poster_path + '">'
+      listaire.innerHTML += '<p>' + seriesAire[i].name + '</p>' + '<a class="alDetalle" href="detalle.html">'+ '<img src="' + "https://image.tmdb.org/t/p/original/" + datos.results[i].poster_path + '">' + '</a>'
     }
 
-    // var posters= datos.results;
-    // var posteraire = document.querySelector(".posteraire");
-    //
-    // for (var i = 0; i < seriesAire.length; i++) {
-    //   posteraire.innerHTML += '<img src="' + "https://image.tmdb.org/t/p/original/" + datos.results[i].backdrop_path + '">'
-    // }
-
-
-      //console.log(seriesAire[i].name)
 
 
   })
 
+/* Mejores puntuadas */
   fetch ("https://api.themoviedb.org/3/tv/top_rated?api_key=4c34fda4463cc4b5610955320cdc1b52&page=1")
 .then(function(respuestaMP){
   return respuestaMP.json();
@@ -41,7 +33,7 @@ window.onload = function () {
 
 })
 
-
+/* Populares */
 
 fetch ("https://api.themoviedb.org/3/tv/popular?api_key=4c34fda4463cc4b5610955320cdc1b52&page=1")
 .then(function(respuestaP){
