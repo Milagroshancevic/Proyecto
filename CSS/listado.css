@@ -25,6 +25,8 @@ body {
 
 }
 
+/* HEADER */
+
 header {
   display: flex;
   flex-wrap: wrap;
@@ -169,6 +171,8 @@ ul.Paginas {
 
 }
 
+/*LISTADO DE SERIES*/
+
 .id {
   display: none;
 }
@@ -203,7 +207,7 @@ ul.Paginas {
 
 }
 
-/* footer */
+/* FOOTER */
 
 footer {
   display: flex;

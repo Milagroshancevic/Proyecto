@@ -24,16 +24,15 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  background-color: rgba(44,252,167, 0.7);
+  background-color: rgba(0,0,0, 0.8);
   width: 100%;
   position: fixed;
+  height: 85px;
+  top: 0%;
+  z-index: 1000;
 
 }
 
-nav {
-  font-family:"Arial";
-  font-size: 25px;
-}
 .logo{
   width: 8%;
 
@@ -53,7 +52,6 @@ nav {
 
 }
 
-
 ul.Paginas {
  display: flex;
  flex-direction:row;
@@ -66,13 +64,14 @@ ul.Paginas {
   padding:3%;
   margin:1.5%;
   position: relative;
+  left: 4%;
   /* top:4%;
   right: 18%; */
 
 }
 
 .Paginas a {
-  color:black;
+  color:white;
   font-size: 25px;
 
 }
@@ -87,16 +86,25 @@ ul.Paginas {
   left:8%;
 }
 
+.buscador {
+  position: relative;
+  top: -3%;
+  right: 30%;
+}
+
+
+
+
 .buscador-form {
   position: relative;
-  right: 370%;
-  top: 23%;
+  /* right: 370%; */
+  top: 32%;
   width: 250%;
-  height: 50%
+  height: 30%
 }
 
 #busqueda-input {
-  width:85%;
+  width:70%;
   height: 100%;
   border-radius: 10px;
   border-width: 0px;
@@ -107,8 +115,8 @@ ul.Paginas {
 }
 
 #busqueda-input::-webkit-input-placeholder {
-  font-size: 25px;
-  font-family: cursive;
+  font-size: 15px;
+  font-family: Arial;
   text-align: center;
 }
 
@@ -118,12 +126,13 @@ ul.Paginas {
   margin-left: 2.5%;
   height: 100%;
   background-color:  white;
-  border-width: medium;
-  font-family: cursive;
+  /* border-width: medium; */
+  font-family: Arial;
   font-weight: bold;
-  border-color: black;
+  /* border-color: black; */
   position: relative;
-  right: 60%;
+  right: 64%;
+  border-width: thin;
 }
 
 .login{
@@ -141,18 +150,20 @@ ul.Paginas {
   padding: 15%;
   position: relative;
   left: 5%;
-  top: 27%;
+  top: 25%;
   width: 100%;
   border-radius: 10px;
   background-color: white;
-  border-width: medium;
-  border-color: black;
-  font-family: cursive;
+  /* border-width: medium; */
+  /* border-color: black; */
+  font-family: Arial;
   font-weight: bold;
   font-size: 15px;
   text-align: center;
+  border-width: thin;
 
 }
+
 
 /* SERIES */
 .detalleA img {
@@ -163,7 +174,7 @@ ul.Paginas {
   font-family: "Arial";
   font-size:20px;
   font-weight: bold;
-  
+
 }
 
 .detalleMP p {
@@ -190,58 +201,59 @@ ul.Paginas {
 
 
 
-/*Footer */
+/*FOOTER */
 
-div.alumnos ul {
-  color: grey;
-  font-family:"Arial";
-  font-size: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  position: relative;
-  left: 30px;
-
-}
-
-div.alumnos ul li {
-  padding: 15px;
-  color:black;
-}
-
-#FormBus {
-  position: relative;
-  top: 115px;
-
-}
-
-input .busqueda {
-  width: 20%;
-
-}
-
-
-
-.TMDB img {
-  width: 100%;
-  position: relative;
-  top:18%;
-
-}
-
-.TMDB {
-  position: relative;
-  left: 60%;
-  width: 12%;
-
-}
 
 footer {
   display: flex;
   flex-direction: row;
-  position: relative;
-  background-color: rgba(44,252,167, 0.7);
+  position: absolute;
+  background-color: rgba(0,0,0, 0.7);
   width: 100%;
-  top: 100%;
+}
 
+
+div.alumnos ul {
+ color: grey;
+ font-family:"Arial";
+ font-size: 18px;
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-start;
+ position: relative;
+ left: 30px;
+
+}
+
+div.alumnos ul li {
+ padding: 15px;
+ color:white;
+}
+
+.Contacto {
+ font-family: Arial;
+ color: white;
+ font-size: 15px;
+ position: relative;
+ top: 20px;
+}
+
+/* .fab {
+ position: relative;
+ bottom: 1%;
+
+} */
+
+.TMDB img {
+ width: 75%;
+ position: relative;
+ top:26%;
+ left: 8%
+
+}
+
+.TMDB {
+ position: relative;
+ left: 60%;
+ width: 12%;
 }
