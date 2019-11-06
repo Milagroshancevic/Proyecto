@@ -10,7 +10,7 @@ window.onload = function () {
     console.log(seriesAire);
 
     for(var i=0; i<seriesAire.length; i++) {
-      listaire.innerHTML += '<p>' + seriesAire[i].name + '</p>' + '<a class="alDetalle" href="detalle.html?id=' + seriesAire[i].id+ '">'+ '<img src="' + "https://image.tmdb.org/t/p/original/" + datos.results[i].poster_path + '">' + '</a>'
+      listaire.innerHTML += '<li><p>' + seriesAire[i].name + '</p>' + '<a class="alDetalle" href="detalle.html?id=' + seriesAire[i].id+ '">'+ '<img src="' + "https://image.tmdb.org/t/p/original/" + datos.results[i].poster_path + '">' + '</a></li>'
     }
 
 
@@ -28,7 +28,7 @@ window.onload = function () {
   //console.log(seriesMP);
 
   for(var i=0; i<seriesMP.length; i++) {
-    listaMP.innerHTML += '<p>' + seriesMP[i].name + '</p>' + '<a class="alDetalle" href="detalle.html">'+ '<img src="' + "https://image.tmdb.org/t/p/original/" + seriesMP[i].poster_path + '">' + '</a>'
+    listaMP.innerHTML += '<li><p>' + seriesMP[i].name + '</p>' + '<a class="alDetalle" href="detalle.html">'+ '<img src="' + "https://image.tmdb.org/t/p/original/" + seriesMP[i].poster_path + '">' + '</a></li>'
   }
 
 })
@@ -45,7 +45,7 @@ var listaP= document.querySelector(".listaP");
 //console.log(seriesMP);
 
 for(var i=0; i<seriesP.length; i++) {
-  listaP.innerHTML += '<p>' + seriesP[i].name + '</p>' + '<a class="alDetalle" href="detalle.html">' + '<img src="' + "https://image.tmdb.org/t/p/original/" + seriesP[i].poster_path + '">' + '</a>'
+  listaP.innerHTML += '<li><p>' + seriesP[i].name + '</p>' + '<a class="alDetalle" href="detalle.html">' + '<img src="' + "https://image.tmdb.org/t/p/original/" + seriesP[i].poster_path + '">' + '</a></li>'
 }
 
 })
