@@ -7,10 +7,10 @@ window.onload = function () {
   .then(function(datos){
     var seriesAire = datos.results;
     var listaire= document.querySelector(".listaire");
-    //console.log(seriesAire);
+    console.log(seriesAire);
 
     for(var i=0; i<seriesAire.length; i++) {
-      listaire.innerHTML += '<p>' + seriesAire[i].name + '</p>' + '<a class="alDetalle" href="detalle.html">'+ '<img src="' + "https://image.tmdb.org/t/p/original/" + datos.results[i].poster_path + '">' + '</a>'
+      listaire.innerHTML += '<p>' + seriesAire[i].name + '</p>' + '<a class="alDetalle" href="detalle.html?id=' + seriesAire[i].id+ '">'+ '<img src="' + "https://image.tmdb.org/t/p/original/" + datos.results[i].poster_path + '">' + '</a>'
     }
 
 

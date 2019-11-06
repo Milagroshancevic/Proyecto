@@ -3,73 +3,91 @@ window.onload = function (){
 
   // detalles
 
-  fetch("https://api.themoviedb.org/3/tv/24?api_key=4c34fda4463cc4b5610955320cdc1b52")
-  .then(function(respuestaDetalle){
-    return respuestaDetalle.json();
+  var queryString = location.search;
+   // location es toda tu url y el search busca parametros a paratir del signo de pregunta
+  var queryStringObj = new URLSearchParams(queryString);
+   var idDetalle = queryStringObj.get('id');
+
+fetch("https://api.themoviedb.org/3/tv/"+ idDetalle +"?api_key=4c34fda4463cc4b5610955320cdc1b52")
+.then(function(verDetalle){
+  return verDetalle.json();
+   })
+   .then(function(datosDetalle){
+  var details = document.querySelector(".details");
+  var genres = datosDetalle.genres;
+ console.log(datosDetalle);
+
+      var detalles =   '<p>' + datosDetalle.name + '</p>';
+            var ulGenres = "<ul>"
+            for(var i=0;i<genres.length;i++){
+               ulGenres+= '<li class="id-detalles">' + genres[i].id +'</li>' +
+               '<li>'+ '<a href="series.html?id=">' + genres[i].name + '</a>' +"</li>"
+             }
+              ulGenres += "</ul>"
+          detalles += ulGenres;
+          detalles +=  '<p>' + "Lenguaje original: " + datosDetalle.original_language + '</p>';
+          detalles +=  '<p>' + datosDetalle.overview + '</p>';
+          detalles +=  '<p>' + datosDetalle.first_air_date + '</p>';
+          detalles +=  '<img class"imagen-detalles" src="' + "https://image.tmdb.org/t/p/original/" + datosDetalle.poster_path +'" >' ;
+          detalles +=  '<br>';
+          detalles +=  '<button class="button-reco"type="button" name="recom">'+ "Ver recomendaciones" + '</button>';
+ details.innerHTML+= detalles;
+
   })
-  .then(function(datosDetalle){
-    var detalle = datosDetalle.results;
-    var details = document.querySelector(".details");
 
-    for(i=0;i<detalle.length;i++){
-      details.innerHTML+= '<p>' + detalle[i].name + '</p>' + '<p>'+ "Genero: " +  detalle[i].genre_ids + '</p>' + '<p>' + "Lenguaje: " + detalle[i].original_language + '</p>' + '<p>' + detalle[i].overview + '</p>'+ '<p>' + detalle[i].first_air_date + '</p>'  + '<img src="' + "https://image.tmdb.org/t/p/original/" + detalle[i].poster_path +'" >' + '<br>'+ '<button class="button-reco"type="button" name="recom">'+ "Ver recomendaciones" + '</button>'
-      }
+  var queryString2 = location.search;
+   // location es toda tu url y el search busca parametros a paratir del signo de pregunta
+  var queryStringObj2 = new URLSearchParams(queryString);
+   var videoTrailer = queryStringObj2.get('id');
 
+
+  fetch("https://api.themoviedb.org/3/tv/"+ videoTrailer + "/videos?api_key=4c34fda4463cc4b5610955320cdc1b52&language=en-US")
+  .then(function(verVideo){
+    return verVideo.json();
+     })
+     .then(function(datosVideo){
+       console.log(datosVideo);
+    var youtube = document.querySelector(".youtube");
+    var trailer = datosVideo.results[0].key;
+    console.log(trailer);
+    console.log('https://www.youtube.com/watch?v='+ trailer);
+   youtube.innerHTML =  '<iframe width="560" height="315" src="https://www.youtube.com/embed/'+ trailer+'"   frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen >' + '</iframe>';
 })
 
 
-// detalles aire
-  fetch("https://api.themoviedb.org/3/tv/airing_today?api_key=4c34fda4463cc4b5610955320cdc1b52&language=en-US")
-  .then(function(respuestaA){
-    return respuestaA.json();
-  })
-  .then(function(datosA){
-    var aire = datosA.results;
-    var detalleA = document.querySelector(".detalleA");
 
-    for(i=0;i<aire.length;i++){
-      detalleA.innerHTML+= '<p>' + aire[i].name + '</p>' + '<p>'+ "Genero: " +  aire[i].genre_ids + '</p>' + '<p>' + "Lenguaje: " + aire[i].original_language + '</p>' + '<p>' + aire[i].overview + '</p>'+ '<p>' + aire[i].first_air_date + '</p>'  + '<img src="' + "https://image.tmdb.org/t/p/original/" + aire[i].poster_path +'" >' + '<br>'+ '<button class="button-reco"type="button" name="recom">'+ "Ver recomendaciones" + '</button>'
-      }
 
-})
 
-// detalles mejores puntuados
-fetch("https://api.themoviedb.org/3/tv/top_rated?api_key=4c34fda4463cc4b5610955320cdc1b52&page=1")
-.then(function(respuestaMPDetail){
-  return respuestaMPDetail.json();
-})
-.then(function(datosMPdet){
-  var mejorespunt = datosMPdet.results;
-  var detalleMP = document.querySelector(".detalleMP");
 
-  for(i=0;i<mejorespunt.length;i++){
-    detalleMP.innerHTML+= '<p>' + mejorespunt[i].name + '</p>' + '<p>'+ "Genero: " +  mejorespunt[i].genre_ids + '</p>' + '<p>' + "Lenguaje: " + mejorespunt[i].original_language + '</p>' + '<p>' + mejorespunt[i].overview + '</p>'+ '<p>' + mejorespunt[i].first_air_date + '</p>'  + '<img src="' + "https://image.tmdb.org/t/p/original/" + mejorespunt[i].poster_path +'" >' + '<br>'+ '<button class="button-reco"type="button" name="recom">'+ "Ver recomendaciones" + '</button>'
-    }
-})
 
-// detalles populares
-fetch("https://api.themoviedb.org/3/tv/popular?api_key=4c34fda4463cc4b5610955320cdc1b52&page=1")
-.then(function(respuestaPdet){
-  return respuestaPdet.json();
-})
-.then(function(datosPdet){
-  var popularesdet = datosPdet.results;
-  var detalleP = document.querySelector(".detalleP");
 
-  for(i=0;i<popularesdet.length;i++){
-    detalleP.innerHTML+= '<p>' + popularesdet[i].name + '</p>' + '<p>'+ "Genero: " +  popularesdet[i].genre_ids + '</p>' + '<p>' + "Lenguaje: " + popularesdet[i].original_language + '</p>' + '<p>' + popularesdet[i].overview + '</p>'+ '<p>' + popularesdet[i].first_air_date + '</p>'  + '<img src="' + "https://image.tmdb.org/t/p/original/" + popularesdet[i].poster_path +'" >' + '<br>'+ '<button class="button-reco" type="button" name="recom">'+ "Ver recomendaciones" + '</button>'
-    }
-})
+
+//
+//   fetch("https://api.themoviedb.org/3/tv/"+  +"?api_key=4c34fda4463cc4b5610955320cdc1b52")
+//   .then(function(respuestaDetalle){
+//     return respuestaDetalle.json();
+//   })
+//   .then(function(datosDetalle){
+//     var details = document.querySelector(".details");
+//
+//     for(i=0;i<detalle.length;i++){
+//       details.innerHTML+= '<p>' + datosDetalle[i].name + '</p>' + '<p>'+ "Genero: " +  detalle[i].genre_ids + '</p>' + '<p>' + "Lenguaje: " + detalle[i].original_language + '</p>' + '<p>' + detalle[i].overview + '</p>'+ '<p>' + detalle[i].first_air_date + '</p>'  + '<img src="' + "https://image.tmdb.org/t/p/original/" + detalle[i]._path +'" >' + '<br>'+ '<button class="button-reco"type="button" name="recom">'+ "Ver recomendaciones" + '</button>'
+//       }
+//
+// })
+//
+//
+
 
 
 // boton recomendaciones
 
-var recoSeries = document.querySelector(".button-reco")
-console.log(recoSeries);
-  recoSeries.onclick = function() {
-
-
-}
+// var recoSeries = document.querySelector(".button-reco")
+// console.log(recoSeries);
+//   recoSeries.onclick = function() {
+//
+//
+// }
 
 
 
