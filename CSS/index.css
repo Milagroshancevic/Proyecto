@@ -193,7 +193,7 @@ ul.Paginas {
 .listaire {
   display: flex;
   position: relative;
-  /*width: 100%;*/
+  width: 400%;
 }
 .listaire p {
   font-family: "Arial";
@@ -213,9 +213,8 @@ ul.Paginas {
 
 
 }
-
 .alDetalle {
-width: 30%;
+  width: 20%;
 }
 .listaire img {
 width: 100%;
@@ -226,6 +225,7 @@ width: 100%;
 .listaMP {
   display: flex;
   position: relative;
+  width: 400%;
 }
 
 .listaMP p {
@@ -246,12 +246,13 @@ width: 100%;
 }
 
 .listaMP img{
-  width: 20%;
+  width: 100%;
 }
 
 /*Populares */
 .listaP {
   display: flex;
+  width: 400%;
 
 }
 
@@ -273,7 +274,7 @@ width: 100%;
 }
 
 .listaP img {
-  width: 20%;
+  width: 100%;
 }
 
  /* footer */
