@@ -1,3 +1,260 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  list-style: none;
+  color:#2CFCA7;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
 body {
-  background: black;
+  background-color:#1E1A19;
+
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: rgba(0,0,0, 0.7);
+  width: 100%;
+  position: fixed;
+  height: 85px;
+
+}
+
+.logo{
+  width: 8%;
+
+}
+.logo img {
+  width: 100%;
+  position: relative;
+  margin:1.5%;
+  top:1%;
+}
+
+nav {
+  font-family:"Arial";
+  font-size: 25px;
+  width: 70%;
+  position: relative;
+
+}
+
+ul.Paginas {
+ display: flex;
+ flex-direction:row;
+ justify-content: space-between;
+
+}
+
+.Paginas li {
+  width: 13.5%
+  padding:3%;
+  margin:1.5%;
+  position: relative;
+  left: 4%;
+  /* top:4%;
+  right: 18%; */
+
+}
+
+.Paginas a {
+  color:white;
+  font-size: 25px;
+
+}
+
+.Paginas li:nth-child(2) {
+  position: relative;
+  left: 33%;
+}
+
+.Paginas li:nth-child(3) {
+  position: relative;
+  left:8%;
+}
+
+.buscador {
+  position: relative;
+  top: -3%;
+  right: 30%;
+}
+
+
+
+
+.buscador-form {
+  position: relative;
+  /* right: 370%; */
+  top: 32%;
+  width: 250%;
+  height: 30%
+}
+
+#busqueda-input {
+  width:70%;
+  height: 100%;
+  border-radius: 10px;
+  border-width: 0px;
+  position: relative;
+  right: 65%;
+
+
+}
+
+#busqueda-input::-webkit-input-placeholder {
+  font-size: 15px;
+  font-family: Arial;
+  text-align: center;
+}
+
+#busqueda-boton {
+  width: 10%;
+  border-radius: 15%;
+  margin-left: 2.5%;
+  height: 100%;
+  background-color:  white;
+  /* border-width: medium; */
+  font-family: Arial;
+  font-weight: bold;
+  /* border-color: black; */
+  position: relative;
+  right: 64%;
+  border-width: thin;
+}
+
+.login{
+  position: relative;
+  right: 7%;
+  width: 6%;
+
+}
+
+#button-login{
+  /* padding-top: 15%;
+  padding-bottom: 15%;
+  padding-left: 20%;
+  padding-right: 20%; */
+  padding: 15%;
+  position: relative;
+  left: 5%;
+  top: 25%;
+  width: 100%;
+  border-radius: 10px;
+  background-color: white;
+  /* border-width: medium; */
+  /* border-color: black; */
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  border-width: thin;
+
+}
+
+.id {
+  display: none;
+}
+.nameG {
+  width: 50%;
+}
+
+.hipervinculo {
+  width: 50%;
+}
+
+.gen {
+  font-family: "Arial";
+  font-size: 45px;
+  text-align: center;
+  color: white;
+  position: relative;
+  top: 91px;
+}
+
+.listaGeneros {
+  color: white;
+  font-family: "Arial";
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  top:90px;
+  text-align: center;
+
+
+
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background-color: rgba(0,0,0, 0.7);
+  width: 100%;
+  top: 100%;
+
+}
+
+
+div.alumnos ul {
+ color: grey;
+ font-family:"Arial";
+ font-size: 18px;
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-start;
+ position: relative;
+ left: 30px;
+
+}
+
+div.alumnos ul li {
+ padding: 15px;
+ color:white;
+}
+
+.Contacto {
+ font-family: Arial;
+ color: white;
+ font-size: 15px;
+ position: relative;
+ top: 20px;
+}
+
+/* .fab {
+ position: relative;
+ bottom: 1%;
+
+} */
+
+.TMDB img {
+ width: 75%;
+ position: relative;
+ top:26%;
+ left: 8%
+
+}
+
+.TMDB {
+ position: relative;
+ left: 60%;
+ width: 12%;
 }
