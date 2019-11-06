@@ -1,6 +1,23 @@
 window.onload = function (){
 
 
+  // detalles
+
+  fetch("https://api.themoviedb.org/3/tv/24?api_key=4c34fda4463cc4b5610955320cdc1b52")
+  .then(function(respuestaDetalle){
+    return respuestaDetalle.json();
+  })
+  .then(function(datosDetalle){
+    var detalle = datosDetalle.results;
+    var details = document.querySelector(".details");
+
+    for(i=0;i<detalle.length;i++){
+      details.innerHTML+= '<p>' + detalle[i].name + '</p>' + '<p>'+ "Genero: " +  detalle[i].genre_ids + '</p>' + '<p>' + "Lenguaje: " + detalle[i].original_language + '</p>' + '<p>' + detalle[i].overview + '</p>'+ '<p>' + detalle[i].first_air_date + '</p>'  + '<img src="' + "https://image.tmdb.org/t/p/original/" + detalle[i].poster_path +'" >' + '<br>'+ '<button class="button-reco"type="button" name="recom">'+ "Ver recomendaciones" + '</button>'
+      }
+
+})
+
+
 // detalles aire
   fetch("https://api.themoviedb.org/3/tv/airing_today?api_key=4c34fda4463cc4b5610955320cdc1b52&language=en-US")
   .then(function(respuestaA){
