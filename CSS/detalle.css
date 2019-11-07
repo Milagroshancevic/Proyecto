@@ -99,8 +99,6 @@ ul.Paginas {
 }
 
 
-
-
 .buscador-form {
   position: relative;
   /* right: 370%; */
@@ -180,6 +178,22 @@ ul.Paginas {
   text-align: center;
 }
 
+.descri-contenedor{
+  width: 100%;
+  position: relative;
+}
+.descri {
+  width: 45%;
+  position: absolute;
+  left:50%;
+  bottom: 45%;
+
+}
+
+.imagen {
+  width: 50%;
+}
+
 .nomDetalle {
   font-size: 30px;
   color:#2CFCA7;
@@ -197,9 +211,14 @@ ul.Paginas {
 }
 
 .imagen-detalles {
-  width: 40%;
+  width: 75%;
 }
 
+.youtube {
+  position: absolute;
+  left: 50%;
+  top:95%;
+}
 
 
 
