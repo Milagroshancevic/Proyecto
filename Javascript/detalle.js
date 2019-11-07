@@ -63,8 +63,8 @@ fetch("https://api.themoviedb.org/3/tv/"+ idDetalle +"?api_key=4c34fda4463cc4b56
 // boton recomendaciones
 
 
-function myFunction() {
-  alert("hola");
+function myFunction(idDeSerie) {
+  alert(idDeSerie);
 }
 
 
