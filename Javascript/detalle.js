@@ -44,7 +44,7 @@ fetch("https://api.themoviedb.org/3/tv/"+ idDetalle +"?api_key=4c34fda4463cc4b56
   })
 
   var queryString2 = location.search;
-   // location es toda tu url y el search busca parametros a paratir del signo de pregunta
+   // location es toda tu url y el search busca parametros a partir del signo de pregunta
   var queryStringObj2 = new URLSearchParams(queryString);
    var videoTrailer = queryStringObj2.get('id');
 
@@ -75,6 +75,9 @@ botonReco.onclick= function(){
        .then(function(datosRecom){
          for (var i = 0; i <datosRecom.results.length; i++) {
            console.log(datosRecom.results[i].name);
+           var recomendadas = document.querySelector(".recomendadas")
+           recomendadas.innerHTML += '<img class="posterRecomend" src="' + "https://image.tmdb.org/t/p/original/" + datosRecom.results[i].poster_path + '">'
+
          }
 
         })

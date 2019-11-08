@@ -37,6 +37,7 @@ header {
   position: fixed;
   height: 100px;
   z-index: 1000;
+  margin-bottom: 4%;
 
 }
 
@@ -189,12 +190,15 @@ ul.Paginas {
   font-size: 30px;
   color:#2CFCA7;
   text-decoration: underline;
+  position: relative;
+  left: 3%
 }
 
 .details {
   font-family: "Arial";
   font-size: 20px;
   width: 100%;
+  padding-top: 110px;
 }
 
 .id-detalles {
@@ -203,12 +207,19 @@ ul.Paginas {
 
 .imagen-detalles {
   width: 75%;
+  position: relative;
+    left: 3%;
 }
 
 .youtube {
   position: absolute;
   left: 50%;
   top:95%;
+}
+
+
+.posterRecomend{
+  width: 40%;
 }
 
 
