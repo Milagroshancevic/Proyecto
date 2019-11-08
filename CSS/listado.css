@@ -199,6 +199,16 @@ ul.Paginas {
 
 
 /*FOOTER*/
+footer {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background-color: rgba(0,0,0, 0.7);
+  width: 100%;
+  top: 100%;
+
+}
+
 div.alumnos ul {
  color: grey;
  font-family:"Arial";
