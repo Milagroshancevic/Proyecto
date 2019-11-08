@@ -8,6 +8,9 @@ window.onload = function (){
   var queryStringObj = new URLSearchParams(queryString);
    var idDetalle = queryStringObj.get('id');
 
+
+
+//continuo con detalles
 fetch("https://api.themoviedb.org/3/tv/"+ idDetalle +"?api_key=4c34fda4463cc4b5610955320cdc1b52")
 .then(function(verDetalle){
   return verDetalle.json();
@@ -33,7 +36,7 @@ fetch("https://api.themoviedb.org/3/tv/"+ idDetalle +"?api_key=4c34fda4463cc4b56
           detalles +=  '<p>' + "Lenguaje original: " + datosDetalle.original_language + '</p>';
           detalles +=  '<p>' + datosDetalle.first_air_date + '</p>';
           detalles +=  '<br>';
-          detalles +=  '<button onclick="myFunction()" class="button-reco"type="button" name="recom">'+ "Ver recomendaciones" + '</button>';
+          detalles +=  '<button  id="button-reco"type="button" name="recom">'+ "Ver recomendaciones" + '</button>';
           detalles +=  '</div>';
           detalles +=  '</div>';
  details.innerHTML+= detalles;
@@ -61,11 +64,24 @@ fetch("https://api.themoviedb.org/3/tv/"+ idDetalle +"?api_key=4c34fda4463cc4b56
 
 
 // boton recomendaciones
+setTimeout (function(){
+var botonReco = document.querySelector("#button-reco");
+botonReco.onclick= function(){
+  // ver recomendaciones button
+  fetch("https://api.themoviedb.org/3/tv/"+ idDetalle +"/recommendations?api_key=4c34fda4463cc4b5610955320cdc1b52&language=en-US&page=1")
+     .then(function(verRecom){
+       return verRecom.json();
+        })
+       .then(function(datosRecom){
+         for (var i = 0; i <datosRecom.results.length; i++) {
+           console.log(datosRecom.results[i].name);
+         }
 
+        })
 
-function myFunction(idDeSerie) {
-  alert(idDeSerie);
 }
+}
+, 3000);
 
 
 
