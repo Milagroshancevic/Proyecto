@@ -22,7 +22,7 @@ fetch("https://api.themoviedb.org/3/tv/"+ idDetalle +"?api_key=4c34fda4463cc4b56
 
       var detalles = '<div class="descri-contenedor">'
       detalles += '<p class="nomDetalle">' + datosDetalle.name + '</p>';
-      detalles +=  '<p class="imagen">' + '<img class="imagen-detalles" src="' + "https://image.tmdb.org/t/p/original/" + datosDetalle.poster_path +'" >' + '</p>';
+      detalles +=  '<div class="imagen">' + '<img class="imagen-detalles" src="' + "https://image.tmdb.org/t/p/original/" + datosDetalle.poster_path +'" >' + '</div>';
       detalles += '<div class="descri">';
 
       detalles += '<p>' + datosDetalle.overview + '</p>';
@@ -73,8 +73,11 @@ botonReco.onclick= function(){
        return verRecom.json();
         })
        .then(function(datosRecom){
+         var rec = document.querySelector(".rec");
+         var posterRec= datosRecom.results;
          for (var i = 0; i <datosRecom.results.length; i++) {
            console.log(datosRecom.results[i].name);
+           
          }
 
         })
