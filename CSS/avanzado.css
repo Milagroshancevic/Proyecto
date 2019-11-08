@@ -1,3 +1,233 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.opciones a:hover {
+  text-decoration: underline;
+  color: #2CFCA7;
+  font-size: 30px;
+}
+
+
+
+
+
 body {
-  background: black;
+ background-color:#1E1A19;
+
+}
+/*HEADER */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: rgba(0,0,0, 0.7);
+  width: 100%;
+  position: fixed;
+  height: 100px;
+  z-index: 1000;
+
+}
+
+
+.logo{
+  width: 17%;
+  position: relative;
+  bottom: 70%;
+  right: 2%;
+
+
+}
+.logo img {
+  width: 100%;
+}
+
+nav {
+  font-family:"Arial";
+  font-size: 25px;
+  width: 40%;
+  position: relative;
+  left: 36%;
+  top: 29%;
+  height: 60px;
+
+}
+
+
+
+ul.Paginas {
+ display: flex;
+ flex-direction:row;
+ justify-content: space-between;
+ width: 100%;
+
+}
+
+.Paginas li {
+  position: relative;
+  width: 30%
+
+}
+
+.Paginas a {
+  color:white;
+  font-size: 25px;
+}
+
+
+.buscador {
+  position: relative;
+  right: 40%;
+  width: 35%;
+  height: 50px;
+  top: 25%;
+
+}
+
+
+
+.buscador-form {
+  position: relative;
+  width: 100%;
+  height: 90%
+}
+
+#busqueda-input {
+  width:86%;
+  height: 100%;
+  border-radius: 10px;
+  border-width: medium;
+  position: relative;
+  border-color: #2CFCA7;
+  background-color: black;
+  color: white;
+
+
+}
+
+#busqueda-input::-webkit-input-placeholder {
+  font-size: 15px;
+  font-family: Arial;
+  text-align: center;
+  color: grey;
+}
+
+#busqueda-boton {
+  width: 10%;
+  border-radius: 15%;
+  height: 100%;
+  background-color:black;
+  font-family: Arial;
+  font-weight: normal;
+  border-color:#2CFCA7;
+  color: white;
+  position: relative;
+  border-width: medium;
+}
+
+.login{
+  position: relative;
+  right: 2%;
+  width: 6%;
+  top: 25%;
+
+}
+
+#button-login{
+  padding: 15%;
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+  border-color: #2CFCA7;
+  background-color: black;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  border-width: medium;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* footer */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background-color: rgba(0,0,0, 0.7);
+  width: 100%;
+  top: 100%;
+
+}
+
+
+/*FOOTER*/
+div.alumnos ul {
+ color: grey;
+ font-family:"Arial";
+ font-size: 18px;
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-start;
+ position: relative;
+ left: 30px;
+
+}
+
+div.alumnos ul li {
+ padding: 15px;
+ color:white;
+}
+
+.Contacto {
+ font-family: Arial;
+ color: white;
+ font-size: 15px;
+ position: relative;
+ top: 20px;
+}
+
+.fab {
+ position: relative;
+ bottom:20px;
+ left: 20px;
+
+}
+
+.TMDB img {
+ width: 75%;
+ position: relative;
+ top:22%;
+ left: 8%
+
+}
+
+.TMDB {
+ position: relative;
+ left: 60%;
+ width: 12%;
+
 }

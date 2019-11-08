@@ -11,109 +11,107 @@ li {
   list-style: none;
 }
 
-a {
-  text-decoration: none;
-  color: white;
-}
-
 a:hover{
   text-decoration: underline;
 }
 
-body {
-  background-color:#1E1A19 ;
-  color:white;
+.opciones a:hover {
+  text-decoration: underline;
+  color: #2CFCA7;
+  font-size: 30px;
 }
 
-/*HEADER*/
+
+body {
+ background-color:#1E1A19;
+
+}
+
+/*HEADER */
 header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  background-color: rgba(0,0,0, 0.8);
+  background-color: rgba(0,0,0, 0.7);
   width: 100%;
   position: fixed;
-  height: 85px;
-  top: 0%;
+  height: 100px;
   z-index: 1000;
 
 }
 
+
 .logo{
-  width: 8%;
+  width: 17%;
+  position: relative;
+  bottom: 70%;
+  right: 2%;
+
 
 }
 .logo img {
   width: 100%;
-  position: relative;
-  margin:1.5%;
-  top:1%;
 }
 
 nav {
   font-family:"Arial";
   font-size: 25px;
-  width: 70%;
+  width: 40%;
   position: relative;
+  left: 36%;
+  top: 29%;
+  height: 60px;
 
 }
+
+
 
 ul.Paginas {
  display: flex;
  flex-direction:row;
  justify-content: space-between;
+ width: 100%;
 
 }
 
 .Paginas li {
-  width: 13.5%
-  padding:3%;
-  margin:1.5%;
   position: relative;
-  left: 4%;
-  /* top:4%;
-  right: 18%; */
+  width: 30%
 
 }
 
 .Paginas a {
   color:white;
   font-size: 25px;
-
 }
 
-.Paginas li:nth-child(2) {
-  position: relative;
-  left: 33%;
-}
-
-.Paginas li:nth-child(3) {
-  position: relative;
-  left:8%;
-}
 
 .buscador {
   position: relative;
-  top: -3%;
-  right: 30%;
+  right: 40%;
+  width: 35%;
+  height: 50px;
+  top: 25%;
+
 }
+
 
 
 .buscador-form {
   position: relative;
-  /* right: 370%; */
-  top: 32%;
-  width: 250%;
-  height: 30%
+  width: 100%;
+  height: 90%
 }
 
 #busqueda-input {
-  width:70%;
+  width:86%;
   height: 100%;
   border-radius: 10px;
-  border-width: 0px;
+  border-width: medium;
   position: relative;
-  right: 65%;
+  border-color: #2CFCA7;
+  background-color: black;
+  color: white;
 
 
 }
@@ -122,52 +120,45 @@ ul.Paginas {
   font-size: 15px;
   font-family: Arial;
   text-align: center;
+  color: grey;
 }
 
 #busqueda-boton {
   width: 10%;
   border-radius: 15%;
-  margin-left: 2.5%;
   height: 100%;
-  background-color:  white;
-  /* border-width: medium; */
+  background-color:black;
   font-family: Arial;
-  font-weight: bold;
-  /* border-color: black; */
+  font-weight: normal;
+  border-color:#2CFCA7;
+  color: white;
   position: relative;
-  right: 64%;
-  border-width: thin;
+  border-width: medium;
 }
 
 .login{
   position: relative;
-  right: 7%;
+  right: 2%;
   width: 6%;
+  top: 25%;
 
 }
 
 #button-login{
-  /* padding-top: 15%;
-  padding-bottom: 15%;
-  padding-left: 20%;
-  padding-right: 20%; */
   padding: 15%;
   position: relative;
-  left: 5%;
-  top: 25%;
   width: 100%;
   border-radius: 10px;
-  background-color: white;
-  /* border-width: medium; */
-  /* border-color: black; */
+  border-color: #2CFCA7;
+  background-color: black;
   font-family: Arial;
   font-weight: bold;
   font-size: 15px;
+  color: white;
   text-align: center;
-  border-width: thin;
+  border-width: medium;
 
 }
-
 
 /* SERIES DESCRIPCION */
 
@@ -222,18 +213,7 @@ ul.Paginas {
 
 
 
-/*FOOTER */
-
-
-footer {
-  display: flex;
-  flex-direction: row;
-  position: absolute;
-  background-color: rgba(0,0,0, 0.7);
-  width: 100%;
-}
-
-
+/*FOOTER*/
 div.alumnos ul {
  color: grey;
  font-family:"Arial";
@@ -259,16 +239,17 @@ div.alumnos ul li {
  top: 20px;
 }
 
-/* .fab {
+.fab {
  position: relative;
- bottom: 1%;
+ bottom:20px;
+ left: 20px;
 
-} */
+}
 
 .TMDB img {
  width: 75%;
  position: relative;
- top:26%;
+ top:22%;
  left: 8%
 
 }
@@ -277,4 +258,5 @@ div.alumnos ul li {
  position: relative;
  left: 60%;
  width: 12%;
+
 }
