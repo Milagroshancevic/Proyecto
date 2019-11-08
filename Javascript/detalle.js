@@ -73,17 +73,11 @@ botonReco.onclick= function(){
        return verRecom.json();
         })
        .then(function(datosRecom){
-         var rec = document.querySelector(".rec");
-         var posterRec= datosRecom.results;
          for (var i = 0; i <datosRecom.results.length; i++) {
            console.log(datosRecom.results[i].name);
-<<<<<<< HEAD
            var recomendadas = document.querySelector(".recomendadas")
            recomendadas.innerHTML += '<img class="posterRecomend" src="' + "https://image.tmdb.org/t/p/original/" + datosRecom.results[i].poster_path + '">'
 
-=======
-           
->>>>>>> master
          }
 
         })
