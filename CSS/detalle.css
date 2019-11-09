@@ -163,29 +163,53 @@ ul.Paginas {
 
 /* SERIES DESCRIPCION */
 
-
+/* este es el titulo de la pagina */
 .descripcion {
   font-family: "Arial";
   font-size: 45px;
   text-align: center;
 }
-
+/* esto es titulo de la pagina  + detalles completo */
+.details {
+  font-family: "Arial";
+  font-size: 20px;
+  width: 100%;
+  padding-top: 110px;
+}
+/* este es el detalle completo de la serie */
 .descri-contenedor{
   width: 100%;
   position: relative;
 }
+
+/* este es el detalle de texto y el ver recomendaciones */
 .descri {
   width: 45%;
-  position: absolute;
+  position: relative;
   left:50%;
-  bottom: 45%;
+  bottom: 750px;
+  font-size: 17px;
 
 }
 
+.descri ul{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: flex-start;
+}
+.listaGen {
+  width: 18%;
+  margin-left: 3%;
+  margin-right: 3%;
+
+}
+
+/* contenedor del poster */
 .imagen {
   width: 50%;
 }
-
+/* nombre de la serie */
 .nomDetalle {
   font-size: 30px;
   color:#2CFCA7;
@@ -194,33 +218,43 @@ ul.Paginas {
   left: 3%
 }
 
-.details {
-  font-family: "Arial";
-  font-size: 20px;
-  width: 100%;
-  padding-top: 110px;
-}
 
+/* este es el id del genero */
 .id-detalles {
   display: none;
 }
 
+/* poster */
 .imagen-detalles {
   width: 75%;
   position: relative;
-    left: 3%;
+  left: 3%;
 }
 
+/* este es el trailer */
 .youtube {
-  position: absolute;
+  position: relative;
   left: 50%;
-  top:95%;
+  top: 140%;
+  margin-bottom: 3%;
+  width: 50%;
 }
 
+/* container de las recomendadas */
+.recomend-container{
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  top: 105%;
+  padding-right: 2%;
+}
+}
 
+/* posters de las recomendaciones */
 .posterRecomend{
-  width: 40%;
+  width: 100%;
 }
+
 
 
 
