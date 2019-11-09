@@ -41,6 +41,18 @@ fetch("https://api.themoviedb.org/3/tv/"+ idDetalle +"?api_key=4c34fda4463cc4b56
  details.innerHTML+= detalles;
 
   })
+setTimeout (function(){
+  let verRecomendacionesButton = document.querySelector("#button-reco");
+  console.log(verRecomendacionesButton);
+  verRecomendacionesButton.onmouseover= function() {
+  verRecomendacionesButton.innerHTML = "Haz click aquí para ver";
+
+}
+verRecomendacionesButton.onmouseout = function(){
+  verRecomendacionesButton.innerHTML = "Ver recomendaciones";
+}
+}
+, 2000);
 
   var queryString2 = location.search;
    // location es toda tu url y el search busca parametros a partir del signo de pregunta
@@ -79,7 +91,7 @@ botonReco.onclick= function(){
 
          }
 
-        
+
         })
 
 }

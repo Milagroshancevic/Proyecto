@@ -240,6 +240,22 @@ ul.Paginas {
   width: 50%;
 }
 
+/* boton de ver recomendaciones */
+#button-reco{
+border-radius: 10px;
+color: white;
+background: black;
+border-width: medium;
+border-color: #2CFCA7;
+padding: 2%;
+
+}
+
+#button-reco:hover{
+  color: black;
+  background-color: white;
+}
+
 /* container de las recomendadas */
 .recomend-container{
   position: absolute;
