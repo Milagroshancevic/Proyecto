@@ -35,13 +35,24 @@ fetch("https://api.themoviedb.org/3/tv/"+ idDetalle +"?api_key=4c34fda4463cc4b56
           detalles += ulGenres;
           detalles +=  '<p>' + "Lenguaje original: " + datosDetalle.original_language + '</p>';
           detalles +=  '<p>' + datosDetalle.first_air_date + '</p>';
-          detalles +=  '<br>';
           detalles +=  '<button  id="button-reco"type="button" name="recom">'+ "Ver recomendaciones" + '</button>';
           detalles +=  '</div>';
           detalles +=  '</div>';
  details.innerHTML+= detalles;
 
   })
+setTimeout (function(){
+  let verRecomendacionesButton = document.querySelector("#button-reco");
+  console.log(verRecomendacionesButton);
+  verRecomendacionesButton.onmouseover= function() {
+  verRecomendacionesButton.innerHTML = "Haz click aquí para ver";
+
+}
+verRecomendacionesButton.onmouseout = function(){
+  verRecomendacionesButton.innerHTML = "Ver recomendaciones";
+}
+}
+, 2000);
 
   var queryString2 = location.search;
    // location es toda tu url y el search busca parametros a partir del signo de pregunta
@@ -73,18 +84,13 @@ botonReco.onclick= function(){
        return verRecom.json();
         })
        .then(function(datosRecom){
-         var rec = document.querySelector(".rec");
-         var posterRec= datosRecom.results;
          for (var i = 0; i <datosRecom.results.length; i++) {
            console.log(datosRecom.results[i].name);
-<<<<<<< HEAD
            var recomendadas = document.querySelector(".recomendadas")
-           recomendadas.innerHTML += '<img class="posterRecomend" src="' + "https://image.tmdb.org/t/p/original/" + datosRecom.results[i].poster_path + '">'
+           recomendadas.innerHTML +='<li><a href="' + "detalle.html?id="+  datosRecom.results[i].id +'"><img class="posterRecomend" src="' + "https://image.tmdb.org/t/p/original/" + datosRecom.results[i].poster_path + '"></a></li>'
 
-=======
-           
->>>>>>> master
          }
+
 
         })
 

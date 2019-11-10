@@ -25,12 +25,8 @@ a:hover{
 }
 
 
-
-
-
 body {
  background-color:#1E1A19;
-
 }
 
 
@@ -44,6 +40,7 @@ header {
   position: fixed;
   height: 100px;
   z-index: 1000;
+  margin-bottom: 4%;
 
 }
 
