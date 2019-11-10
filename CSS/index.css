@@ -141,7 +141,7 @@ body {
 
 /*MEDIA QUERY DESKTOP*/
 
-@media (min-width: 751px) {
+/* @media (min-width: 751px) { */
 
 
 /*HEADER */
@@ -463,4 +463,4 @@ div.alumnos ul li {
 
 }
 
-}
+/*}/*
