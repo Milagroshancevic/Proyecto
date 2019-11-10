@@ -162,6 +162,10 @@ ul.Paginas {
 
 
 /*LISTADO DE SERIES*/
+.contenido {
+  padding-top: 50px;
+  padding-bottom: 260px;
+}
 
 .id {
   display: none;

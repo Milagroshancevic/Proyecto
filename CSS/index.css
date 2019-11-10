@@ -21,14 +21,127 @@ a:hover{
   font-size: 30px;
 }
 
-
-
-
-
 body {
  background-color:#1E1A19;
 
+
 }
+
+ /*RESPONSIVE */
+
+/*MEDIA QUERY MOBILE*/
+@media (max-width:450px) {
+  /* HEADER */
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgba(0,0,0, 0.7);
+    width: 100%;
+    position: fixed;
+    height: 90px;
+    z-index: 1000;
+  }
+
+  .logo{
+    width: 17%;
+    position: relative;
+    bottom: 41%;
+    right: 2%;
+  }
+
+  .buscador-form {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    right: 3%;
+  }
+
+  ul.Paginas {
+   display: flex;
+   flex-direction:row;
+   justify-content: space-between;
+   width: 100%;
+   position: relative;
+   right: 5%;
+
+  }
+
+  .login{
+    position: relative;
+    right: 2%;
+    width: 6%;
+    top: 29%;
+
+  }
+
+  #button-login{
+    padding: 15%;
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    border-color: #2CFCA7;
+    background-color: black;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    border-width: medium;
+
+  }
+
+  /*MAIN BODY */
+
+
+  /*FOOTER*/
+  .TMDB {
+    position: relative;
+    left: 45%;
+    width: 12%;
+    top:5px;
+
+
+  }
+
+}
+
+/*MEDIA QUERY TABLET*/
+@media (min-width: 451px) and (max-width: 750px) {
+  /* HEADER */
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgba(0,0,0, 0.7);
+    width: 90%;
+    position: fixed;
+    height: 100px;
+    z-index: 1000;
+
+  }
+
+  .logo{
+    width: 17%;
+    position: relative;
+    bottom: 37%;
+    right: 2%;
+
+  }
+
+  .buscador-form {
+    position: relative;
+    width: 100%;
+    height: 90%;
+    right: 4%;
+  }
+
+}
+/*FIN MEDIA QUERY TABLET*/
+
+/*MEDIA QUERY DESKTOP*/
+
+@media (min-width: 751px) {
 
 
 /*HEADER */
@@ -51,8 +164,8 @@ header {
   bottom: 70%;
   right: 2%;
 
-
 }
+
 .logo img {
   width: 100%;
 }
@@ -99,12 +212,23 @@ ul.Paginas {
 
 }
 
+#busqueda-input {
+  width:75%;
+  height: 100%;
+  border-radius: 10px;
+  border-width: medium;
+  position: relative;
+  border-color: #2CFCA7;
+  background-color: black;
+  color: white;
 
+
+}
 
 .buscador-form {
   position: relative;
   width: 100%;
-  height: 90%
+  height: 90%;
 }
 
 #busqueda-input {
@@ -165,6 +289,10 @@ ul.Paginas {
 }
 
 /* Secion series*/
+.content {
+  padding-top: 110px;
+}
+
 .series {
   width: 100%;
 }
@@ -331,5 +459,7 @@ div.alumnos ul li {
   position: relative;
   left: 60%;
   width: 12%;
+
+}
 
 }
