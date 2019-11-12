@@ -41,6 +41,8 @@ fetch("https://api.themoviedb.org/3/tv/"+ idDetalle +"?api_key=4c34fda4463cc4b56
  details.innerHTML+= detalles;
 
   })
+
+  // interaccion de ver recomendaciones
 setTimeout (function(){
   let verRecomendacionesButton = document.querySelector("#button-reco");
   console.log(verRecomendacionesButton);

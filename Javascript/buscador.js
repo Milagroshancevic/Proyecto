@@ -14,16 +14,17 @@ return respuestaSearch.json();
 var resultadoSearch = document.querySelector(".resultadoSearch");
 var datosFinales= datosSearch.results;
 console.log(datosFinales)
-// var lista = "" ;
+var lista = "" ;
 //  (lo que hacemos con el for es llenar esta variable que esta vacia)
 
-for(var i=0; i<datosFinales.lenght; i++){
-  resultadoSearch.innerHTML += "<li>"+ datosFinales[i].id +"</li>"
+for(var i=0; i<datosSearch.results[i].lenght; i++){
+  // resultadoSearch.innerHTML += '<li>'+ datosFinales[i].id +'</li>'
+  // console.log(datosFinales[i].name);
 
-// lista += "<li>"+ datosFinales[i].id +"</li>"
-// lista += "<li>"+ datosFinales[i].title +"</li>"
-// lista += '<li><img src="' + "https://image.tmdb.org/t/p/original/" + datosFinales[i].poster_path +'"> </li>'
-// // resultadoSearch.innerHTML += lista;
+lista += '<li>'+ datosFinales[i].id +'</li>'
+lista += '<li>'+ datosFinales[i].title +'</li>'
+lista += '<li><img src="' + "https://image.tmdb.org/t/p/original/" + datosFinales[i].poster_path +'"> </li>'
+resultadoSearch.innerHTML += lista;
 }
 // aca el problema esta en como agragarlo al html, nose pq no me deja
 
