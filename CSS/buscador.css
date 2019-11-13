@@ -165,6 +165,62 @@ ul.Paginas {
 }
 
 /* buscador */
+.resultados-buscador{
+  position: relative;
+  top: 105px;
+  margin-bottom: 25%;
+}
+
+
+.buscadorGrande-container {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  left: 15%;
+}
+
+
+.buscadorGrande-form {
+  position: relative;
+  height: 90%;
+  width: 60%;
+}
+
+#buscadorGrande {
+  width:86%;
+  height: 100%;
+  border-radius: 10px;
+  border-width: medium;
+  position: relative;
+  border-color: #2CFCA7;
+  background-color: black;
+  color: white;
+
+
+}
+
+#buscadorGrande::-webkit-input-placeholder {
+  font-size: 15px;
+  font-family: Arial;
+  text-align: center;
+  color: grey;
+}
+
+#buscadorGrande-boton {
+  width: 10%;
+  border-radius: 15%;
+  height: 100%;
+  background-color:black;
+  font-family: Arial;
+  font-weight: normal;
+  border-color:#2CFCA7;
+  color: white;
+  position: relative;
+  border-width: medium;
+}
+
+
+
 
 
 

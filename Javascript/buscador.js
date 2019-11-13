@@ -2,6 +2,10 @@ var queryStringS= location.search;
 var searchParams= new URLSearchParams (queryStringS);
 var search= searchParams.get("search");
 
+if(search=="null"){
+  alert("no hemos encontrado resultado, prueba nuevamente");
+} else {
+
 // var url=.....
 // en la url le agregamos con + + la variable que tiene la infomacion que en este caso es search
 
@@ -11,22 +15,23 @@ return respuestaSearch.json();
 
 })
 .then(function(datosSearch){
-var resultadoSearch = document.querySelector(".resultadoSearch");
-var datosFinales= datosSearch.results;
-console.log(datosFinales)
-var lista = "" ;
+  var datosFinales= datosSearch.results;
+  var resultadoSearch =   document.querySelector(".resultadoSearch");
+  console.log(datosFinales);
+// var lista = "" ;
 //  (lo que hacemos con el for es llenar esta variable que esta vacia)
 
-for(var i=0; i<datosSearch.results[i].lenght; i++){
-  // resultadoSearch.innerHTML += '<li>'+ datosFinales[i].id +'</li>'
-  // console.log(datosFinales[i].name);
+for(var i=0; i<datosFinales.length; i++){
+  resultadoSearch.innerHTML += '<li><a class="alDetalleBuscadas" href="detalle.html?id='+ datosFinales[i].id +'">' + '<img src=" ' + "https://image.tmdb.org/t/p/original/" + datosFinales[i].poster_path + '">' + '</a></li>'
 
-lista += '<li>'+ datosFinales[i].id +'</li>'
-lista += '<li>'+ datosFinales[i].title +'</li>'
-lista += '<li><img src="' + "https://image.tmdb.org/t/p/original/" + datosFinales[i].poster_path +'"> </li>'
-resultadoSearch.innerHTML += lista;
+
+// lista += '<li>'+ datosFinales[i].id +'</li>'
+// lista += '<li>'+ datosFinales[i].title +'</li>'
+// lista += '<li><img src="' + "https://image.tmdb.org/t/p/original/" + datosFinales[i].poster_path +'"> </li>'
+// resultadoSearch.innerHTML += lista;
 }
 // aca el problema esta en como agragarlo al html, nose pq no me deja
 
 
 })
+}
