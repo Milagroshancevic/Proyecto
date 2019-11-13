@@ -328,7 +328,156 @@ div.alumnos ul li {
 
 /*MEDIA QUERY MOBILE*/
 @media (max-width:450px) {
+
   /* HEADER */
+
+
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgba(0,0,0, 0.7);
+    width: 100%;
+    position: relative;
+    height: 110px;
+    z-index: 1000;
+    margin-bottom: 4%;
+
+  }
+
+
+  .logo{
+    width: 17%;
+    position: absolute;
+    bottom: 18%;
+    right: 81%;
+
+  }
+
+  .logo img {
+    width: 100%;
+  }
+
+  nav {
+    width: 20%;
+    position: absolute;
+    left: 60%;
+    right: 40%;
+    top: -8%;
+    height: 105px;
+
+  }
+
+
+  ul.Paginas {
+   display: flex;
+   flex-direction:column;
+   width: 100%;
+
+  }
+
+  .Paginas li {
+    width: 100%
+
+  }
+
+  .Paginas a {
+    color:white;
+    font-size: 14px;
+    font-family: "Arial";
+  }
+
+  .Paginas a:hover {
+    text-decoration: underline;
+    font-size: 16px;
+    color: #2CFCA7;
+  }
+
+
+  .buscador {
+    position: absolute;
+    right: 40%;
+    width: 35%;
+    height: 50px;
+    top: 30%;
+
+  }
+
+  #busqueda-input {
+    width:70%;
+    height: 95%;
+    border-radius: 10px;
+    border-width: medium;
+    position: relative;
+    border-color: #2CFCA7;
+    background-color: black;
+    color: white;
+
+
+  }
+
+  .buscador-form {
+    width: 100%;
+    height: 80%;
+  }
+
+  #busqueda-input {
+    width:80%;
+    height: 95%;
+    border-radius: 10px;
+    border-width: medium;
+    position: relative;
+    border-color: #2CFCA7;
+    background-color: black;
+    color: white;
+
+
+  }
+
+  #busqueda-input::-webkit-input-placeholder {
+    font-size: 13px;
+    font-family: Arial;
+    text-align: center;
+    color: grey;
+  }
+
+  #busqueda-boton {
+    width: 8%;
+    border-radius: 15%;
+    height: 95%;
+    background-color:black;
+    font-family: Arial;
+    font-weight: normal;
+    border-color:#2CFCA7;
+    color: white;
+    position: relative;
+    border-width: medium;
+  }
+
+  .login{
+    position: absolute;
+    right: 3%;
+    width:11%;
+    top: 38%;
+
+  }
+
+  #button-login{
+    padding: 15%;
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    border-color: #2CFCA7;
+    background-color: black;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    border-width: medium;
+
+  }
+
 
   /*MAIN BODY */
   .content {
@@ -371,7 +520,7 @@ div.alumnos ul li {
     width: 40%;
     position: absolute;
     left: -11%;
-    top: 18%;
+    top: 22%;
   }
 
 
@@ -453,6 +602,12 @@ div.alumnos ul li {
   .Paginas a {
     font-size: 15px;
     font-family: "Arial";
+  }
+
+  .Paginas a:hover {
+    text-decoration: underline;
+    font-size: 17px;
+    color: #2CFCA7;
   }
 
 
@@ -587,6 +742,13 @@ div.alumnos ul li {
    top: 35%;
 
  }
+
+}
+
+/* DESKTOP QUERY*/
+
+@media (min-width:751px) {
+
 
 }
 /*FIN MEDIA QUERY TABLET*/

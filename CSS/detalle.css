@@ -332,3 +332,430 @@ div.alumnos ul li {
  width: 12%;
 
 }
+
+
+
+
+
+
+ /*RESPONSIVE */
+
+/*MEDIA QUERY MOBILE*/
+@media (max-width:450px) {
+
+  /* HEADER */
+
+
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgba(0,0,0, 0.7);
+    width: 100%;
+    position: relative;
+    height: 110px;
+    z-index: 1000;
+    margin-bottom: 4%;
+
+  }
+
+
+  .logo{
+    width: 17%;
+    position: absolute;
+    bottom: 18%;
+    right: 81%;
+
+  }
+
+  .logo img {
+    width: 100%;
+  }
+
+  nav {
+    width: 20%;
+    position: absolute;
+    left: 60%;
+    right: 40%;
+    top: -8%;
+    height: 105px;
+
+  }
+
+
+  ul.Paginas {
+   display: flex;
+   flex-direction:column;
+   width: 100%;
+
+  }
+
+  .Paginas li {
+    width: 100%
+
+  }
+
+  .Paginas a {
+    color:white;
+    font-size: 14px;
+    font-family: "Arial";
+  }
+
+  .Paginas a:hover {
+    text-decoration: underline;
+    font-size: 16px;
+    color: #2CFCA7;
+  }
+
+
+  .buscador {
+    position: absolute;
+    right: 40%;
+    width: 35%;
+    height: 50px;
+    top: 30%;
+
+  }
+
+  #busqueda-input {
+    width:70%;
+    height: 95%;
+    border-radius: 10px;
+    border-width: medium;
+    position: relative;
+    border-color: #2CFCA7;
+    background-color: black;
+    color: white;
+
+
+  }
+
+  .buscador-form {
+    width: 100%;
+    height: 80%;
+  }
+
+  #busqueda-input {
+    width:80%;
+    height: 95%;
+    border-radius: 10px;
+    border-width: medium;
+    position: relative;
+    border-color: #2CFCA7;
+    background-color: black;
+    color: white;
+
+
+  }
+
+  #busqueda-input::-webkit-input-placeholder {
+    font-size: 13px;
+    font-family: Arial;
+    text-align: center;
+    color: grey;
+  }
+
+  #busqueda-boton {
+    width: 8%;
+    border-radius: 15%;
+    height: 95%;
+    background-color:black;
+    font-family: Arial;
+    font-weight: normal;
+    border-color:#2CFCA7;
+    color: white;
+    position: relative;
+    border-width: medium;
+  }
+
+  .login{
+    position: absolute;
+    right: 3%;
+    width:11%;
+    top: 38%;
+
+  }
+
+  #button-login{
+    padding: 15%;
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    border-color: #2CFCA7;
+    background-color: black;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    border-width: medium;
+
+  }
+
+
+  /*MAIN BODY */
+  .content {
+    padding-top: 15px;
+  }
+
+  .titulo1 {
+    font-family: "Arial";
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+
+.titulos {
+    font-family: "Arial";
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #2CFCA7;
+}
+
+.uk-width-1-1 li {
+  width: 25%;
+}
+
+  /*FOOTER*/
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background-color: rgba(0,0,0, 0.7);
+    width: 100%;
+    top: 100%;
+    height: 90px;
+
+  }
+
+  .alumnos {
+    width: 40%;
+    position: absolute;
+    left: -11%;
+    top: 22%;
+  }
+
+
+ div.alumnos ul {
+   color: grey;
+   font-family:"Arial";
+   font-size: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   width: 80%;
+ }
+
+ div.alumnos ul li {
+   padding: 2px;
+   color:white;
+
+
+ }
+
+ .Contacto {
+   font-family: Arial;
+   color: white;
+   font-size: 11px;
+   position: absolute;
+   right: 38%;
+   top: 27%;
+   width: 20%;
+
+ }
+
+
+ .TMDB {
+   position: absolute;
+   width: 25%;
+   height: 50px;
+   top: 20%;
+   left: 70%;
+
+ }
+
+
+
+}
+
+/*MEDIA QUERY TABLET*/
+@media (min-width:450px) and (max-width:750px) {
+  /* HEADER */
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgba(0,0,0, 0.7);
+    width: 100%;
+    height: 110px;
+    z-index: 1000;
+    position: relative;
+
+  }
+
+
+  nav {
+    width: 20%;
+    position: absolute;
+    left: 64%;
+    top: -2%;
+    height: 100px;
+  }
+
+
+  ul.Paginas {
+   display: flex;
+   flex-direction:column;
+   width: 85%;
+   right: 5%;
+
+  }
+
+  .Paginas a {
+    font-size: 15px;
+    font-family: "Arial";
+  }
+
+  .Paginas a:hover {
+    text-decoration: underline;
+    font-size: 17px;
+    color: #2CFCA7;
+  }
+
+
+  .login{
+    position: absolute;
+    right: 2%;
+    width: 11%;
+    top: 29%;
+
+  }
+
+  .logo{
+    width: 19%;
+    position: absolute;
+    bottom: 3%;
+    right: 81%;
+    height: 100px;
+  }
+
+  .buscador {
+    position: absolute;
+    right: 37%;
+    width: 35%;
+    height: 45px;
+
+  }
+
+  .buscador-form {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    right: 3%;
+  }
+
+  #button-login{
+    padding: 15%;
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    border-color: #2CFCA7;
+    background-color: black;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 11px;
+    color: white;
+    text-align: center;
+    border-width: medium;
+
+  }
+
+  #busqueda-input {
+    width: 80%;
+    height: 100%;
+    border-radius: 10px;
+    border-width: medium;
+    position: relative;
+    border-color: #2CFCA7;
+    background-color: black;
+    color: white;
+  }
+
+  /* MAIN BODY */
+  .content {
+    padding-top: 10px;
+  }
+
+  .uk-width-1-1 li {
+    width: calc(75% * 1 / 3.001);
+  }
+
+  /*FOOTER*/
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background-color: rgba(0,0,0, 0.7);
+    width: 100%;
+    top: 100%;
+    height: 100px;
+
+  }
+
+  .alumnos {
+    width: 36%;
+    position: absolute;
+    right: 65%;
+    top: 30%;
+    height: 50px;
+  }
+
+
+ div.alumnos ul {
+   color: grey;
+   font-family:"Arial";
+   font-size: 12px;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   width: 100%;
+
+ }
+
+ div.alumnos ul li {
+   color:white;
+   padding: 2px;
+   width: 80%;
+   height: 20px;
+   position: relative;
+   right: 2%;
+
+ }
+
+
+ .Contacto {
+   font-family: Arial;
+   color: white;
+   font-size: 15px;
+   position: absolute;
+   top: 33%;
+   height: 50px;
+   width: 20%;
+   right:37%;
+ }
+
+
+
+ .TMDB {
+   position: absolute;
+   left:73%;
+   width: 23%;
+   top: 35%;
+
+ }
+
+}
+/*FIN MEDIA QUERY TABLET*/
