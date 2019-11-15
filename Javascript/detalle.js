@@ -11,6 +11,7 @@ window.onload = function (){
 
 
 //continuo con detalles
+
 fetch("https://api.themoviedb.org/3/tv/"+ idDetalle +"?api_key=4c34fda4463cc4b5610955320cdc1b52")
 .then(function(verDetalle){
   return verDetalle.json();
@@ -19,12 +20,11 @@ fetch("https://api.themoviedb.org/3/tv/"+ idDetalle +"?api_key=4c34fda4463cc4b56
   var details = document.querySelector(".details");
   var genres = datosDetalle.genres;
  console.log(datosDetalle);
-
+  if(datosDetalle.poster_path !== null){
       var detalles = '<div class="descri-contenedor">'
       detalles += '<p class="nomDetalle">' + datosDetalle.name + '</p>';
       detalles +=  '<div class="imagen">' + '<img class="imagen-detalles" src="' + "https://image.tmdb.org/t/p/original/" + datosDetalle.poster_path +'" >' + '</div>';
       detalles += '<div class="descri">';
-
       detalles += '<p>' + datosDetalle.overview + '</p>';
             var ulGenres = '<p class="losGeneros">'+ "Géneros relacionados:" + '</p>' + "<ul>"
             for(var i=0;i<genres.length;i++){
@@ -39,7 +39,7 @@ fetch("https://api.themoviedb.org/3/tv/"+ idDetalle +"?api_key=4c34fda4463cc4b56
           detalles +=  '</div>';
           detalles +=  '</div>';
  details.innerHTML+= detalles;
-
+}
   })
 
   // interaccion de ver recomendaciones

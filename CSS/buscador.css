@@ -164,7 +164,7 @@ ul.Paginas {
 
 }
 
-/* buscador */
+/* buscador grande*/
 .resultados-buscador{
   position: relative;
   top: 105px;
@@ -217,6 +217,13 @@ ul.Paginas {
   color: white;
   position: relative;
   border-width: medium;
+}
+
+/* resultado del buscador */
+
+.posterBuscado{
+width: 99%;
+
 }
 
 
