@@ -17,17 +17,30 @@ window.onload= function () {
 
      var queryStringExcluido = location.search;
       // location es toda tu url y el search busca parametros a paratir del signo de pregunta
-     var queryStringExcluidoExcluido = new URLSearchParams(queryStringExcluido);
+     var queryStringExcluido = new URLSearchParams(queryStringExcluido);
       var excluidoSerie = queryStringExcluido.get('without_genres');
 
 
-fetch("https://api.themoviedb.org/3/discover/tv?api_key=4c34fda4463cc4b5610955320cdc1b52&sort_by=" + ordenSerie + "&first_air_date_year="+ estrenoSerie + "&with_genres=" +incluidoSerie + "&without_genres=" + excluidoSerie);
+fetch("https://api.themoviedb.org/3/discover/tv?api_key=4c34fda4463cc4b5610955320cdc1b52&sort_by=" + ordenSerie + "&first_air_date_year="+ estrenoSerie + "&with_genres=" +incluidoSerie + "&without_genres=" + excluidoSerie)
+
 .then(function(respuestaAvanzado){
-  respuestaAvanzado.json();
+  return respuestaAvanzado.json();
 })
 .then(function(datosAvanzado){
-  var buscadorAvanzado = document.querySelector()
+  var datosAvan = datosAvanzado.results
+  console.log(datosAvanzado);
+  var generoIncluido = document.querySelector(".generoIncluido")
+  var generoExcluido = document.querySelector(".generoExcluido")
+  var orden = document.querySelector(".orden")
+  var fecha = document.querySelector(".fecha")
 
+
+
+     for(var i=0; datosAvan.length; i++){
+
+    generoIncluido.innerHTML += '<option value="h">' + "hola" + "</option>"
+
+}
 })
 
 
