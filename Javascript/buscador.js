@@ -18,10 +18,11 @@ return respuestaSearch.json();
   console.log(datosFinales);
 
 
-  if (datosFinales.poster_path !== null){
+
 
 
 for(var i=0; i<datosFinales.length; i++){
+    if (datosFinales[i].poster_path !== null){
   resultadoSearch.innerHTML += '<li><a class="sereiesBuscadas" href="' + "detalle.html?id="+ datosFinales[i].id +'">' + '<img class="posterBuscado" src=" ' + "https://image.tmdb.org/t/p/original/" + datosFinales[i].poster_path + '">' + '</a></li>'
 
 
