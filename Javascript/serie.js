@@ -14,10 +14,17 @@ window.onload = function() {
      var generosTitulo= datosTitulo.genres;
      var titulopag = document.querySelector(".titulopag");
 
+     for (var i= 0; i<generosTitulo.length; i++){
+       if (generosTitulo[i].id==idSeries){
+         titulopag.innerText += "Series de " + generosTitulo[i].name
+
+       }
+     }
+
      console.log(datosTitulo);
      console.log(generosTitulo);
 
-       titulopag.innerText += "Series de " + datosTitulo.name
+
 
    })
 
@@ -32,7 +39,7 @@ fetch("https://api.themoviedb.org/3/discover/tv?api_key=4c34fda4463cc4b561095532
   var listaGen = respuDatos.results
 
   for(var i=0; i<listaGen.length; i++){
-    seriesGeneroS.innerHTML += '<li><img src="' + "https://image.tmdb.org/t/p/original/" + listaGen[i].poster_path + '"> </li>'
+    seriesGeneroS.innerHTML += '<li><a href="detalle.html?id=' + listaGen[i].id+ '"><img src="' + "https://image.tmdb.org/t/p/original/" + listaGen[i].poster_path + '"> </a> </li>'
 
   }
 
