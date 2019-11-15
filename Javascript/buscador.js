@@ -18,20 +18,22 @@ return respuestaSearch.json();
   console.log(datosFinales);
 
 
-for(var i=0; i<datosFinales.length; i++){
+  if (datosFinales.poster_path !== null){
 
+
+for(var i=0; i<datosFinales.length; i++){
   resultadoSearch.innerHTML += '<li><a class="sereiesBuscadas" href="' + "detalle.html?id="+ datosFinales[i].id +'">' + '<img class="posterBuscado" src=" ' + "https://image.tmdb.org/t/p/original/" + datosFinales[i].poster_path + '">' + '</a></li>'
 
 
 }
+}
+
 
 if( datosFinales.length == 0){
   alert("Lo siento, no hemos encontrado resultado para " + search + ". Intente con otra busqueda")
 }
 
-// if( datosFinales.title.indexOf("null")!== -1){
-//   alert("Lo siento no hemos encontrado resultado para" + search + ". Intente con otra busqueda")
-// }
+
 
 })
 
