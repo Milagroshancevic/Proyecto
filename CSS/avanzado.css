@@ -407,6 +407,18 @@ div.alumnos ul li {
   width: 25%;
 }
 
+
+
+
+/* formulario de busqueda avanzado */
+  .complete{
+    color: red;
+    font-size: 10px;
+  }
+
+
+
+
   /*FOOTER*/
 
   footer {

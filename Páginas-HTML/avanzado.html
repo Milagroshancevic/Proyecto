@@ -44,7 +44,7 @@
 
 
 
-    <form class="buscadorAvanzado" action="avanzado.js" method="get">
+    <form class="buscadorAvanzado" action="resultadosAvanzado.html" method="GET">
 
       <label for="generoIncluido">Seleccioná tu género </label>
 
@@ -52,7 +52,7 @@
       <select class="generoIncluido" name="generoIncluido">
 
       </select>
-
+      <small id="alertIncluido" class="complete"></small>
 
 
       <label for="generoExcluido"> Excluí un género </label>
@@ -62,7 +62,7 @@
       <select class="generoExcluido" name="generoExcluido">
 
       </select>
-
+      <small id="alertExcluido" class="complete"></small>
 
 
 
@@ -70,10 +70,9 @@
 
 
       <select class="orden" name="orden">
-
-
+        
       </select>
-
+      <small id="alertOrden" class="complete"></small>
 
       <label for="fecha">Año de estreno</label>
 
@@ -81,7 +80,10 @@
 
       <select class="fecha" name="fecha">
       </select>
-      <button type="submit" name="button">BUSCAR!</button>
+      <small id="alertFecha" class="complete"></small>
+<!-- es un break simpatico, no nos reten :)  -->
+      <br>
+      <button type="submit" name="button">BUSCAR</button>
     </form>
 
 
