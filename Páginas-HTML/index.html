@@ -40,9 +40,29 @@
 
 
       <div class="login">
-        <button id="button-login"type="button" name="login">LOGIN</button>
+        <button uk-toggle="target:#my-login" id="button-login my-login" type="button" name="login" >LOGIN</button>
 
-      </div>
+      <!-- This is the modal -->
+<div id="my-login" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <h2 class="uk-modal-title">LOGIN</h2>
+        <form class="login-usuarios" action="index.html" method="GET">
+
+          <label for="usuario">Usuario</label>
+
+          <input type="text" name="usuario" value="" placeholder="Introduzca su usuario" required>
+
+          <label for="contraseña">Contraseña</label>
+
+          <input type="password" name="contraseña" value="" placeholder="Introduzca su contraseña" required>
+
+        </form>
+            <button class="cancelar uk-button uk-button-default uk-modal-close" type="button">Cancelar</button>
+            <button class="uk-button uk-button-primary" type="button">Ingresar</button>
+        </p>
+    </div>
+</div>
+</div>
     </header>
 
 

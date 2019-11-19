@@ -168,6 +168,7 @@ ul.Paginas {
   font-size: 45px;
   text-align: center;
   color: white;
+  margin: 2%;
 }
 /* esto es titulo de la pagina  + detalles completo */
 .details {
@@ -184,7 +185,7 @@ ul.Paginas {
 
 /* este es el detalle de texto y el ver recomendaciones */
 .descri {
-  width: 45%;
+  width: 40%;
   position: relative;
   left:50%;
   bottom: 750px;
@@ -214,8 +215,10 @@ ul.Paginas {
   font-size: 30px;
   color:#2CFCA7;
   text-decoration: underline;
-  position: relative;
-  left: 3%
+  position: absolute;
+  left: 65%;
+  top: 0%;
+  width: 10%;
 }
 
 
@@ -233,11 +236,11 @@ ul.Paginas {
 
 /* este es el trailer */
 .youtube {
-  position: relative;
+  position: absolute;
   left: 50%;
-  top: 140%;
+  top: 175%;
   margin-bottom: 3%;
-  width: 50%;
+  width: 40%;
 }
 
 /* boton de ver recomendaciones */
@@ -718,7 +721,7 @@ div.alumnos ul li {
 
   /* este es el detalle de texto y el ver recomendaciones */
   .descri {
-    width: 45%;
+    width: 40%;
     position: absolute;
     left:50%;
     bottom: 5%;
@@ -769,11 +772,11 @@ div.alumnos ul li {
 
   /* este es el trailer */
   .youtube {
-    position: relative;
-    left: 15%;
-    top: 20px;;
+    position: absolute;
+    left: 50%;
+    top: 175%;
     margin-bottom: 3%;
-    width: 45%;
+    width: 40%;
   }
 
   /* boton de ver recomendaciones */

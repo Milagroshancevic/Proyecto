@@ -156,7 +156,7 @@ ul.Paginas {
 
 }
 
-#button-login{
+ #button-login {
   padding: 15%;
   position: relative;
   width: 100%;
@@ -170,6 +170,18 @@ ul.Paginas {
   text-align: center;
   border-width: medium;
 
+}
+
+
+
+.login-usuarios {
+  display: flex;
+  flex-direction: column;
+}
+
+.cancelar {
+  color: black;
+  background-color: #2CFCA7;
 }
 
 /* Secion series*/
@@ -299,6 +311,7 @@ div.alumnos ul li {
   font-size: 15px;
   position: relative;
   top: 20px;
+  left: 10%;
 }
 
 .fab {
@@ -462,7 +475,7 @@ div.alumnos ul li {
 
   }
 
-  #button-login{
+  #button-login  {
     padding: 15%;
     position: relative;
     width: 100%;
@@ -565,6 +578,7 @@ div.alumnos ul li {
 
 
 }
+
 
 /*MEDIA QUERY TABLET*/
 @media (min-width:450px) and (max-width:750px) {
@@ -747,7 +761,230 @@ div.alumnos ul li {
 
 /* DESKTOP QUERY*/
 
-@media (min-width:751px) {
+@media (min-width:751px) and (max-width:1200px){
+  /*HEADER */
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgba(0,0,0, 0.7);
+    width: 100%;
+    position: relative;
+    height: 100px;
+    z-index: 1000;
+    margin-bottom: 4%;
+
+  }
+
+
+  .logo{
+    width: 17%;
+    position: absolute;
+    bottom:-41%;
+    left: -4%;
+
+  }
+
+  .logo img {
+    width: 100%;
+  }
+
+  nav {
+    font-family:"Arial";
+    font-size: 25px;
+    width: 40%;
+    position: absolute;
+    left: 50%;
+    top: 29%;
+    height: 60px;
+
+  }
+
+
+
+  ul.Paginas {
+   display: flex;
+   flex-direction:row;
+   justify-content: space-between;
+   width: 100%;
+
+  }
+
+  .Paginas li {
+    position: relative;
+    width: 30%
+
+  }
+
+  .Paginas a {
+    color:white;
+    font-size: 22px;
+  }
+
+  .Paginas a:hover {
+    color:#2CFCA7;
+    font-size: 24px;
+  }
+
+
+  .buscador {
+    position: absolute;
+    right: 52%;
+    width: 35%;
+    height: 50px;
+    top: 25%;
+
+  }
+
+  #busqueda-input {
+    width:75%;
+    height: 100%;
+    border-radius: 10px;
+    border-width: medium;
+    position: relative;
+    border-color: #2CFCA7;
+    background-color: black;
+    color: white;
+
+
+  }
+
+  .buscador-form {
+    position: relative;
+    width: 100%;
+    height: 90%;
+  }
+
+  #busqueda-input {
+    width:86%;
+    height: 100%;
+    border-radius: 10px;
+    border-width: medium;
+    position: relative;
+    border-color: #2CFCA7;
+    background-color: black;
+    color: white;
+
+
+  }
+
+  #busqueda-input::-webkit-input-placeholder {
+    font-size: 15px;
+    font-family: Arial;
+    text-align: center;
+    color: grey;
+  }
+
+  #busqueda-boton {
+    width: 10%;
+    border-radius: 15%;
+    height: 100%;
+    background-color:black;
+    font-family: Arial;
+    font-weight: normal;
+    border-color:#2CFCA7;
+    color: white;
+    position: relative;
+    border-width: medium;
+  }
+
+  .login{
+    position: absolute;
+    right: 3%;
+    width: 6%;
+    top: 30%;
+    height: 50px;
+
+  }
+
+  #button-login{
+    padding: 10%;
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    border-color: #2CFCA7;
+    background-color: black;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    border-width: medium;
+
+  }
+
+
+
+  /* footer */
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background-color: rgba(0,0,0, 0.7);
+    width: 100%;
+    top: 100%;
+    height: 100px;
+
+  }
+
+  .alumnos {
+    position: absolute;
+    width: 25%;
+
+  }
+
+
+ div.alumnos ul {
+   color: grey;
+   font-family:"Arial";
+   font-size: 17px;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   position: absolute;
+   height: 90px;
+   padding-left: 0px;
+
+ }
+
+ div.alumnos ul li {
+   padding: 10px;
+   color:white;
+ }
+
+ .Contacto {
+   font-family: Arial;
+   color: white;
+   font-size: 18px;
+   position: absolute;
+   top: 25%;
+   left: 50%;
+ }
+
+ .fab {
+   position: relative;
+   bottom:20px;
+   left: 20px;
+
+ }
+
+ .TMDB img {
+   width: 75%;
+   position: relative;
+   top:22%;
+   left: 8%
+
+ }
+
+ .TMDB {
+   position: absolute;
+   left: 80%;
+   width: 17%;
+   top: 30%;
+
+ }
+
 
 
 }
