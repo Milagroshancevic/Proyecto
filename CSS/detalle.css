@@ -336,6 +336,16 @@ div.alumnos ul li {
 
 }
 
+.link-redes {
+  color: white;
+  text-decoration: none;
+}
+
+.link-redes:hover {
+  color: white;
+  text-decoration: none;
+}
+
 
 
  /*RESPONSIVE */
@@ -871,7 +881,7 @@ div.alumnos ul li {
  .TMDB {
    position: absolute;
    left:73%;
-   width: 23%;
+   width: 12%;
    top: 35%;
 
  }

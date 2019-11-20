@@ -54,18 +54,17 @@ header {
   width: 100%;
 }
 
-nav {
+/* STYLE OPCION ORIGINAL */
+ nav {
   font-family:"Arial";
   font-size: 25px;
-  width: 40%;
+  width: 35%;
   position: relative;
-  left: 36%;
+  left: 35%;
   top: 29%;
   height: 60px;
 
 }
-
-
 
 ul.Paginas {
  display: flex;
@@ -85,6 +84,43 @@ ul.Paginas {
   color:white;
   font-size: 25px;
 }
+/* FIN STYLE ORIGINAL */
+
+/* STYLE OPCION NUEVA TENGO QUE ARREGLAR LOS ESTILOS*/
+/* #boton-opciones {
+    background-color: transparent;
+    color: grey;
+    border: 2px solid #2CFCA7;
+}
+
+nav {
+ font-family:"Arial";
+ font-size: 25px;
+ width: 35%;
+ position: relative;
+ left: 35%;
+ top: 29%;
+ height: 60px;
+
+}
+
+.opciones-Inicio {
+  background-color: black;
+}
+
+ul.Paginas {
+display: flex;
+flex-direction:column;
+width: 100%;
+
+}
+
+.Paginas a {
+ color:#2CFCA7;
+ font-size: 25px;
+} */
+
+/* FIN STYLE NUEVA OPCION */
 
 
 .buscador {
@@ -173,15 +209,38 @@ ul.Paginas {
 }
 
 
+#seccion-login {
+  background-color: black;
+  color:#2CFCA7;
+}
+
+.uk-modal-title {
+  color: white;
+}
 
 .login-usuarios {
   display: flex;
   flex-direction: column;
 }
 
-.cancelar {
+.botones {
+  display: flex;
+  flex-direction: row;
+
+}
+
+#cancelar {
   color: black;
   background-color: #2CFCA7;
+  width: 25%;
+
+}
+
+#ingresar {
+  color: black;
+  background-color: #2CFCA7;
+  width: 25%;
+
 }
 
 /* Secion series*/
@@ -336,6 +395,15 @@ div.alumnos ul li {
 
 }
 
+.link-redes {
+  color: white;
+  text-decoration: none;
+}
+
+.link-redes:hover {
+  color: white;
+  text-decoration: none;
+}
 
  /*RESPONSIVE */
 
@@ -559,7 +627,7 @@ div.alumnos ul li {
    color: white;
    font-size: 11px;
    position: absolute;
-   right: 38%;
+   left: 40%;
    top: 27%;
    width: 20%;
 
@@ -573,6 +641,16 @@ div.alumnos ul li {
    top: 20%;
    left: 70%;
 
+ }
+
+ .link-redes {
+   color: white;
+   text-decoration: none;
+ }
+
+ .link-redes:hover {
+   color: white;
+   text-decoration: none;
  }
 
 
@@ -744,7 +822,7 @@ div.alumnos ul li {
    top: 33%;
    height: 50px;
    width: 20%;
-   right:37%;
+   left:45%;
  }
 
 
@@ -757,7 +835,19 @@ div.alumnos ul li {
 
  }
 
+ .link-redes {
+   color: white;
+   text-decoration: none;
+ }
+
+ .link-redes:hover {
+   color: white;
+   text-decoration: none;
+ }
+
 }
+
+/*FIN MEDIA QUERY TABLET*/
 
 /* DESKTOP QUERY*/
 
@@ -985,7 +1075,17 @@ div.alumnos ul li {
 
  }
 
+ .link-redes {
+   color: white;
+   text-decoration: none;
+ }
+
+ .link-redes:hover {
+   color: white;
+   text-decoration: none;
+ }
+
 
 
 }
-/*FIN MEDIA QUERY TABLET*/
+/*FIN MEDIA QUERY DESKTOP*/

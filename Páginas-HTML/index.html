@@ -18,7 +18,9 @@
       <div class="logo">
         <img src="../Imágenes/logo-JustSeries.png">
       </div>
+
       <nav>
+        <!-- OPCION ORIGINAL -->
         <ul class="Paginas">
           <li class="opciones"> <a href="index.html">Home</a> </li>
           <li class="opciones"> <a href="avanzado.html">Explorá</a> </li>
@@ -27,7 +29,21 @@
 
         </ul>
 
+        <!-- OPCION NUEVA  -->
+
+        <!-- <button id="#boton-opciones" class="uk-button uk-button-default" type="button">OPCIONES</button>
+        <div class="opciones-Inicio" uk-dropdown>
+    <ul class="Paginas uk-nav uk-dropdown-nav">
+        <li class="opciones uk-nav-header"><a href="index.html">Home</a></li>
+        <li class="opciones uk-nav-header"> <a href="avanzado.html">Explorá</a> </li>
+        <li class="opciones uk-nav-header"> <a href="generos.html">Géneros</a></li>
+
+        <li class="uk-nav-divider"></li>
+
+    </ul>
+</div> -->
       </nav>
+
       <div class="buscador">
         <form class="buscador-form" action="buscador.html" method="get">
           <input id="busqueda-input" type="text" name="search" value="" placeholder="Buscá acá tu serie favorita">
@@ -43,23 +59,30 @@
         <button uk-toggle="target:#my-login" id="button-login my-login" type="button" name="login" >LOGIN</button>
 
       <!-- This is the modal -->
-<div id="my-login" uk-modal>
-    <div class="uk-modal-dialog uk-modal-body">
+<div  id="my-login" uk-modal>
+    <div id="seccion-login" class="uk-modal-dialog uk-modal-body">
         <h2 class="uk-modal-title">LOGIN</h2>
         <form class="login-usuarios" action="index.html" method="GET">
 
           <label for="usuario">Usuario</label>
 
           <input type="text" name="usuario" value="" placeholder="Introduzca su usuario" required>
+          <small id="alertUsuario" class="complete"></small>
 
           <label for="contraseña">Contraseña</label>
 
           <input type="password" name="contraseña" value="" placeholder="Introduzca su contraseña" required>
+          <small id="alertContraseña" class="complete"></small>
+
+          <div class="botones">
+  <button id="ingresar" class="uk-button uk-button-primary" type="button">Ingresar</button>
+  <button id="cancelar" class=" uk-button uk-button-default uk-modal-close" type="button">Cancelar</button>
+
+          </div>
 
         </form>
-            <button class="cancelar uk-button uk-button-default uk-modal-close" type="button">Cancelar</button>
-            <button class="uk-button uk-button-primary" type="button">Ingresar</button>
-        </p>
+
+
     </div>
 </div>
 </div>
@@ -147,7 +170,7 @@
 
   <!-- </div> -->
 
-
+<a href="#"></a>
   </div>
 
 </div>
@@ -167,8 +190,12 @@
 
       <div class="Contacto">
         <p>Contactános</p>
+        <a class="link-redes" href="https://www.instagram.com/">
         <i class="fab fa-twitter"></i>
+      </a>
+      <a class="link-redes"  href="https://www.facebook.com/">
         <i class="fab fa-facebook"></i>
+      </a>
 
       </div>
     </footer>

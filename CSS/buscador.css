@@ -223,12 +223,6 @@ ul.Paginas {
 
 
 
-
-
-
-
-
-
 /*FOOTER*/
 
 footer {
@@ -288,6 +282,15 @@ div.alumnos ul li {
 
 }
 
+.link-redes {
+  color: white;
+  text-decoration: none;
+}
+
+.link-redes:hover {
+  color: white;
+  text-decoration: none;
+}
 
 
 
