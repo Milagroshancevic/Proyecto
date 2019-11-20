@@ -63,22 +63,22 @@ var selectFecha = anioDeEstreno.selectedIndex;
 console.log(anioDeEstreno[0]);
 console.log(opcionesFecha);
 
-// formulario.onsubmit = function(e) {
-  // console.log(document.querySelector(".fecha").selectedIndex);
-  // e.preventDefault()
-//   if (document.querySelector(".generoIncluido").selectedIndex == 0) {
-//     document.querySelector("#alertIncluido").innerText = "*Seleccioná el género que quieras buscar";
-//   }
-//   if (document.querySelector(".generoExcluido").selectedIndex == 0) {
-//       document.querySelector("#alertExcluido").innerText = "*Seleccioná el género que quieras excluir";
-//     }
-//   if (document.querySelector(".orden").selectedIndex == 0) {
-//         document.querySelector("#alertOrden").innerText = "*Seleccioná el orden de tu búsqueda";
-//     }
-//   if (document.querySelector(".fecha").selectedIndex == 0) {
-//           document.querySelector("#alertFecha").innerText = "*Seleccioná un año";
-//   }
-// }
+formulario.onsubmit = function(e) {
+  console.log(document.querySelector(".fecha").selectedIndex);
+  e.preventDefault()
+  if (document.querySelector(".generoIncluido").selectedIndex == 0) {
+    document.querySelector("#alertIncluido").innerText = "*Seleccioná el género que quieras buscar";
+  }
+  if (document.querySelector(".generoExcluido").selectedIndex == 0) {
+      document.querySelector("#alertExcluido").innerText = "*Seleccioná el género que quieras excluir";
+    }
+  if (document.querySelector(".orden").selectedIndex == 0) {
+        document.querySelector("#alertOrden").innerText = "*Seleccioná el orden de tu búsqueda";
+    }
+  if (document.querySelector(".fecha").selectedIndex == 0) {
+          document.querySelector("#alertFecha").innerText = "*Seleccioná un año";
+  }
+}
 
 // Luego de enviar formu --> busquedaAv
 

@@ -29,7 +29,7 @@ fetch("https://api.themoviedb.org/3/tv/"+ idDetalle +"?api_key=4c34fda4463cc4b56
             var ulGenres = '<p class="losGeneros">'+ "Géneros relacionados:" + '</p>' + "<ul>"
             for(var i=0;i<genres.length;i++){
                ulGenres+= '<li class="id-detalles">' + genres[i].id +'</li>' +
-               '<li class="listaGen">'+ '<a href="series.html?id=">' + genres[i].name + '</a>' +"</li>"
+               '<li class="listaGen">'+ '<a href="' + "series.html?id="+ genres[i].id +'">' + genres[i].name + '</a>' +"</li>"
              }
               ulGenres += "</ul>"
           detalles += ulGenres;
