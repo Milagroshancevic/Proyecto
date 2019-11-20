@@ -162,9 +162,49 @@ ul.Paginas {
 
 
 /*MAIN BODY*/
+/* formulario */
 .buscadorAvanzado {
   display: flex;
   flex-direction: column;
+  width: 70%;
+  position: relative;
+  left: 15%;
+  top: 150px;
+  margin-bottom: 15%;
+}
+/* inputs */
+.inputs-form{
+border-radius: 10px;
+border-color: #2CFCA7;
+background-color: black;
+font-family: Arial;
+font-weight: normal;
+font-size: 20px;
+color: white;
+padding: 1%;
+border: 0;
+
+}
+
+
+
+
+
+/* boton buscar */
+#buscar-avan-button{
+border-radius: 30px;
+border-width: 0;
+border-color: #2CFCA7;
+background-color: black;
+font-family: Arial;
+font-weight: normal;
+font-size: 20px;
+padding: 2%;
+color: white;
+width: 20%;
+position: relative;
+left: 40%;
+
 }
 
 /*FOOTER*/

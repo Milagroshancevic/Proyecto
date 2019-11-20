@@ -78,7 +78,22 @@ formulario.onsubmit = function(e) {
   if (document.querySelector(".fecha").selectedIndex == 0) {
           document.querySelector("#alertFecha").innerText = "*Seleccioná un año";
   }
+
+
+  // var optionInclu = document.querySelector(".generoIncluido option");
+  // var optionExclu = document.querySelector(".generoExcluido option");
+  //
+  //    if (optionInclu == optionExclu){
+  //     alert("El género que busques no puede estar excluido, intenta con otra cosa")
+  //   }
+
+
 }
+// setTimeOut (function() {
+
+
+// }
+// , 2000);
 
 // Luego de enviar formu --> busquedaAv
 

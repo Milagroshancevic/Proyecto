@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../CSS/avanzado.css">
     <!-- UIkit CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/css/uikit.min.css" />
@@ -49,7 +50,7 @@
       <label for="generoIncluido">Seleccioná tu género </label>
 
 
-      <select class="generoIncluido" name="generoIncluido">
+      <select class="inputs-form generoIncluido " name="generoIncluido">
 
       </select>
       <small id="alertIncluido" class="complete"></small>
@@ -59,7 +60,7 @@
 
 
 
-      <select class="generoExcluido" name="generoExcluido">
+      <select class="inputs-form generoExcluido" name="generoExcluido">
 
       </select>
       <small id="alertExcluido" class="complete"></small>
@@ -69,7 +70,7 @@
       <label for="orden"> Ordenar por </label>
 
 
-      <select class="orden" name="orden">
+      <select class="inputs-form orden" name="orden">
 
       </select>
       <small id="alertOrden" class="complete"></small>
@@ -78,12 +79,12 @@
 
 
 
-      <select class="fecha" name="fecha">
+      <select class="inputs-form fecha" name="fecha">
       </select>
       <small id="alertFecha" class="complete"></small>
 <!-- es un break simpatico, no nos reten :)  -->
       <br>
-      <button type="submit" name="button">BUSCAR</button>
+      <button id="buscar-avan-button" type="submit" name="button">BUSCAR</button>
     </form>
 
 
@@ -120,7 +121,7 @@
         <img src="../Imágenes/LOGO.POSTA.png">
       </div>
 
-      
+
     </footer>
 
     <script src="../Javascript/avanzado.js">
