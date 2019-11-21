@@ -28,13 +28,14 @@ body {
 }
 
 /*HEADER */
-header {
+/* header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   background-color: rgba(0,0,0, 0.7);
-  width: 100%;
-  /*position: fixed;*/
+  width: 100%; */
+
+  /*position: fixed;
   height: 100px;
   z-index: 1000;
   margin-bottom: 4%;
@@ -54,7 +55,7 @@ header {
   width: 100%;
 }
 
-/* STYLE OPCION ORIGINAL */
+
  nav {
   font-family:"Arial";
   font-size: 25px;
@@ -84,43 +85,6 @@ ul.Paginas {
   color:white;
   font-size: 25px;
 }
-/* FIN STYLE ORIGINAL */
-
-/* STYLE OPCION NUEVA TENGO QUE ARREGLAR LOS ESTILOS*/
-/* #boton-opciones {
-    background-color: transparent;
-    color: grey;
-    border: 2px solid #2CFCA7;
-}
-
-nav {
- font-family:"Arial";
- font-size: 25px;
- width: 35%;
- position: relative;
- left: 35%;
- top: 29%;
- height: 60px;
-
-}
-
-.opciones-Inicio {
-  background-color: black;
-}
-
-ul.Paginas {
-display: flex;
-flex-direction:column;
-width: 100%;
-
-}
-
-.Paginas a {
- color:#2CFCA7;
- font-size: 25px;
-} */
-
-/* FIN STYLE NUEVA OPCION */
 
 
 .buscador {
@@ -242,6 +206,209 @@ width: 100%;
   width: 25%;
 
 }
+
+/*  OPCION NUEVA*/
+
+
+/* STYLE OPCION NUEVA TENGO QUE ARREGLAR LOS ESTILOS*/
+
+/*HEADER */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: rgba(0,0,0, 0.7);
+  width: 100%;
+  position: relative;;
+  height: 100px;
+  z-index: 1000;
+  margin-bottom: 4%;
+
+}
+
+
+.logo{
+  width: 17%;
+  position: absolute;
+  bottom: -69%;
+  left: -2%;
+
+}
+
+.logo img {
+  width: 100%;
+}
+
+
+ nav {
+  font-family:"Arial";
+  font-size: 25px;
+  width: 10%;
+  position: absolute;
+  left: 70%;
+  top: 25%;
+  height: 60px;
+
+}
+
+.uk-dropdown {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    padding: 25px;
+    background-color: black;
+
+  }
+
+ul.Paginas {
+ display: flex;
+ flex-direction:column;
+ justify-content: space-between;
+ width: 100%;
+ color: grey;
+
+}
+
+.opciones-Inicio {
+    color: grey;
+    background-color: black;
+    left: 0px;
+    top: 44px;
+
+}
+
+
+.Paginas a:hover {
+  color:#2CFCA7;
+  font-size: 25px;
+}
+
+
+.buscador {
+  position: absolute;
+  right: 40%;
+  width: 35%;
+  height: 50px;
+  top: 25%;
+
+}
+
+#busqueda-input {
+  width:75%;
+  height: 100%;
+  border-radius: 10px;
+  border-width: medium;
+  position: relative;
+  border-color: #2CFCA7;
+  background-color: black;
+  color: white;
+
+
+}
+
+.buscador-form {
+  position: relative;
+  width: 100%;
+  height: 90%;
+}
+
+#busqueda-input {
+  width:86%;
+  height: 100%;
+  border-radius: 10px;
+  border-width: medium;
+  position: relative;
+  border-color: #2CFCA7;
+  background-color: black;
+  color: white;
+
+
+}
+
+#busqueda-input::-webkit-input-placeholder {
+  font-size: 15px;
+  font-family: Arial;
+  text-align: center;
+  color: grey;
+}
+
+#busqueda-boton {
+  width: 10%;
+  border-radius: 15%;
+  height: 100%;
+  background-color:black;
+  font-family: Arial;
+  font-weight: normal;
+  border-color:#2CFCA7;
+  color: white;
+  position: relative;
+  border-width: medium;
+}
+
+.login{
+  position: absolute;
+  right: 4%;
+  width: 6%;
+  top: 29%;
+
+
+}
+
+ .registrate {
+  color: grey;
+    background-color: transparent;
+    width: 100%;
+    padding: 10px;
+    border: solid;
+    border-color: #2cfca7;
+
+}
+
+
+#seccion-login {
+  background-color: black;
+  color:#2CFCA7;
+}
+
+.uk-modal-title {
+  color: white;
+}
+
+.login-usuarios {
+  display: flex;
+  flex-direction: column;
+}
+
+.botones {
+  display: flex;
+  flex-direction: row;
+
+}
+
+#cancelar {
+  color: black;
+  background-color: #2CFCA7;
+  width: 25%;
+
+}
+
+#ingresar {
+  color: black;
+  background-color: #2CFCA7;
+  width: 25%;
+
+}
+
+.muchasOpciones {
+    background-color: transparent;
+    color: grey;
+    border: 2px solid #2CFCA7;
+    width: 100%;
+    height: 80%;
+}
+
+/* FIN STYLE NUEVA OPCION */
+
 
 /* Secion series*/
 .content {
@@ -410,17 +577,15 @@ div.alumnos ul li {
 /*MEDIA QUERY MOBILE*/
 @media (max-width:450px) {
 
-  /* HEADER */
-
-
+  /* NUEVA HEADER */
   header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     background-color: rgba(0,0,0, 0.7);
     width: 100%;
-    position: relative;
-    height: 110px;
+    position: relative;;
+    height: 100px;
     z-index: 1000;
     margin-bottom: 4%;
 
@@ -439,54 +604,64 @@ div.alumnos ul li {
     width: 100%;
   }
 
-  nav {
-    width: 20%;
+
+   nav {
+    font-family:"Arial";
+    font-size: 25px;
+    width: 17%;
     position: absolute;
-    left: 60%;
-    right: 40%;
-    top: -8%;
-    height: 105px;
+    left: 63%;
+    top: 29%;
+    height: 40px;
+
 
   }
 
+  .uk-dropdown {
+      display: none;
+      position: absolute;
+      min-width: 200px;
+      padding: 25px;
+      background-color: black;
+
+    }
 
   ul.Paginas {
    display: flex;
    flex-direction:column;
+   justify-content: space-between;
    width: 100%;
+   color: grey;
 
   }
 
-  .Paginas li {
-    width: 100%
+  .opciones-Inicio {
+      color: grey;
+      background-color: black;
+      left: 0px;
+      top: 44px;
 
   }
 
-  .Paginas a {
-    color:white;
-    font-size: 14px;
-    font-family: "Arial";
-  }
 
   .Paginas a:hover {
-    text-decoration: underline;
-    font-size: 16px;
-    color: #2CFCA7;
+    color:#2CFCA7;
+    font-size: 25px;
   }
 
 
   .buscador {
     position: absolute;
-    right: 40%;
+    right: 43%;
     width: 35%;
     height: 50px;
-    top: 30%;
+    top: 33%;
 
   }
 
   #busqueda-input {
-    width:70%;
-    height: 95%;
+    width:75%;
+    height: 100%;
     border-radius: 10px;
     border-width: medium;
     position: relative;
@@ -498,8 +673,8 @@ div.alumnos ul li {
   }
 
   .buscador-form {
-    width: 100%;
-    height: 80%;
+    width: 95%;
+    height: 75%;
   }
 
   #busqueda-input {
@@ -516,7 +691,7 @@ div.alumnos ul li {
   }
 
   #busqueda-input::-webkit-input-placeholder {
-    font-size: 13px;
+    font-size: 15px;
     font-family: Arial;
     text-align: center;
     color: grey;
@@ -525,7 +700,7 @@ div.alumnos ul li {
   #busqueda-boton {
     width: 8%;
     border-radius: 15%;
-    height: 95%;
+    height: 90%;
     background-color:black;
     font-family: Arial;
     font-weight: normal;
@@ -539,25 +714,65 @@ div.alumnos ul li {
     position: absolute;
     right: 3%;
     width:11%;
-    top: 38%;
+    top: 37%;
+
 
   }
 
-  #button-login  {
-    padding: 15%;
-    position: relative;
-    width: 100%;
-    border-radius: 10px;
-    border-color: #2CFCA7;
+   .registrate {
+    color: grey;
+      background-color: transparent;
+      width: 100%;
+      border: solid;
+      border-color: #2cfca7;
+      padding: 5px;
+
+  }
+
+
+  #seccion-login {
     background-color: black;
-    font-family: Arial;
-    font-weight: bold;
-    font-size: 10px;
+    color:#2CFCA7;
+  }
+
+  .uk-modal-title {
     color: white;
-    text-align: center;
-    border-width: medium;
+  }
+
+  .login-usuarios {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .botones {
+    display: flex;
+    flex-direction: row;
 
   }
+
+  #cancelar {
+    color: black;
+    background-color: #2CFCA7;
+    width: 25%;
+
+  }
+
+  #ingresar {
+    color: black;
+    background-color: #2CFCA7;
+    width: 25%;
+
+  }
+
+  .muchasOpciones {
+      background-color: transparent;
+      color: grey;
+      border: 2px solid #2CFCA7;
+
+  }
+
+
+  /* FIN NUEVA HEADER  */
 
 
   /*MAIN BODY */
@@ -870,8 +1085,8 @@ div.alumnos ul li {
   .logo{
     width: 17%;
     position: absolute;
-    bottom:-41%;
-    left: -4%;
+    top:-21%;
+    left: 1%;
 
   }
 
@@ -882,27 +1097,28 @@ div.alumnos ul li {
   nav {
     font-family:"Arial";
     font-size: 25px;
-    width: 40%;
+    width: 10%;
     position: absolute;
-    left: 50%;
+    left: 73%;
     top: 29%;
     height: 60px;
 
   }
 
-
+  .muchasOpciones {
+      background-color: transparent;
+      color: grey;
+      border: 2px solid #2CFCA7;
+      width: 100%;
+      height: 80%;
+      padding: 7px;
+  }
 
   ul.Paginas {
    display: flex;
-   flex-direction:row;
+   flex-direction:column;
    justify-content: space-between;
    width: 100%;
-
-  }
-
-  .Paginas li {
-    position: relative;
-    width: 30%
 
   }
 
@@ -919,7 +1135,7 @@ div.alumnos ul li {
 
   .buscador {
     position: absolute;
-    right: 52%;
+    right: 39%;
     width: 35%;
     height: 50px;
     top: 25%;
@@ -981,8 +1197,8 @@ div.alumnos ul li {
   .login{
     position: absolute;
     right: 3%;
-    width: 6%;
-    top: 30%;
+    width: 7%;
+    top: 35%;
     height: 50px;
 
   }
@@ -1002,6 +1218,17 @@ div.alumnos ul li {
     border-width: medium;
 
   }
+
+  .registrate {
+   color: grey;
+     background-color: transparent;
+     width: 100%;
+     padding: 10px;
+     border: solid;
+     border-color: #2cfca7;
+     padding: 7px;
+
+ }
 
 
 
