@@ -331,7 +331,7 @@ padding: 2%;
   top: 105%;
   padding-right: 2%;
 }
-}
+
 
 /* posters de las recomendaciones */
 .posterRecomend{
@@ -339,79 +339,79 @@ padding: 2%;
 }
 
 
- /* footer */
+/* footer */
 
- footer {
-   display: flex;
-   flex-direction: row;
-   position: relative;
-   background-color: rgba(0,0,0, 0.7);
-   width: 100%;
-   top: 100%;
+footer {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background-color: rgba(0,0,0, 0.7);
+  width: 100%;
+  top: 100%;
 
- }
+}
 
- .alumnos {
+.alumnos {
 
- }
+}
 
 
 div.alumnos ul {
-  color: grey;
-  font-family:"Arial";
-  font-size: 18px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  position: relative;
-  left: 30px;
+ color: grey;
+ font-family:"Arial";
+ font-size: 18px;
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-start;
+ position: relative;
+ left: 30px;
 
 }
 
 div.alumnos ul li {
-  padding: 15px;
-  color:white;
+ padding: 15px;
+ color:white;
 }
 
 .Contacto {
-  font-family: Arial;
-  color: white;
-  font-size: 15px;
-  position: relative;
-  top: 20px;
-  left: 10%;
+ font-family: Arial;
+ color: white;
+ font-size: 15px;
+ position: relative;
+ top: 20px;
+ left: 10%;
 }
 
 .fab {
-  position: relative;
-  bottom:20px;
-  left: 20px;
+ position: relative;
+ bottom:20px;
+ left: 20px;
 
 }
 
 .TMDB img {
-  width: 75%;
-  position: relative;
-  top:22%;
-  left: 8%
+ width: 75%;
+ position: relative;
+ top:22%;
+ left: 8%
 
 }
 
 .TMDB {
-  position: relative;
-  left: 60%;
-  width: 12%;
+ position: relative;
+ left: 60%;
+ width: 12%;
 
 }
 
 .link-redes {
-  color: white;
-  text-decoration: none;
+ color: white;
+ text-decoration: none;
 }
 
 .link-redes:hover {
-  color: white;
-  text-decoration: none;
+ color: white;
+ text-decoration: none;
 }
 
 
@@ -728,7 +728,7 @@ div.alumnos ul li {
     top: 115%;
     padding-right: 2%;
   }
-  }
+
 
   /* posters de las recomendaciones */
   .posterRecomend{
@@ -805,8 +805,6 @@ div.alumnos ul li {
    color: white;
    text-decoration: none;
  }
-
-
 
 }
 
@@ -1022,7 +1020,7 @@ div.alumnos ul li {
     top: 120%;
     padding-right: 2%;
   }
-  }
+
 
   /* posters de las recomendaciones */
   .posterRecomend{
