@@ -27,188 +27,6 @@ body {
 
 }
 
-/*HEADER */
-/* header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  background-color: rgba(0,0,0, 0.7);
-  width: 100%; */
-
-  /*position: fixed;
-  height: 100px;
-  z-index: 1000;
-  margin-bottom: 4%;
-
-}
-
-
-.logo{
-  width: 17%;
-  position: relative;
-  bottom: 70%;
-  right: 2%;
-
-}
-
-.logo img {
-  width: 100%;
-}
-
-
- nav {
-  font-family:"Arial";
-  font-size: 25px;
-  width: 35%;
-  position: relative;
-  left: 35%;
-  top: 29%;
-  height: 60px;
-
-}
-
-ul.Paginas {
- display: flex;
- flex-direction:row;
- justify-content: space-between;
- width: 100%;
-
-}
-
-.Paginas li {
-  position: relative;
-  width: 30%
-
-}
-
-.Paginas a {
-  color:white;
-  font-size: 25px;
-}
-
-
-.buscador {
-  position: relative;
-  right: 40%;
-  width: 35%;
-  height: 50px;
-  top: 25%;
-
-}
-
-#busqueda-input {
-  width:75%;
-  height: 100%;
-  border-radius: 10px;
-  border-width: medium;
-  position: relative;
-  border-color: #2CFCA7;
-  background-color: black;
-  color: white;
-
-
-}
-
-.buscador-form {
-  position: relative;
-  width: 100%;
-  height: 90%;
-}
-
-#busqueda-input {
-  width:86%;
-  height: 100%;
-  border-radius: 10px;
-  border-width: medium;
-  position: relative;
-  border-color: #2CFCA7;
-  background-color: black;
-  color: white;
-
-
-}
-
-#busqueda-input::-webkit-input-placeholder {
-  font-size: 15px;
-  font-family: Arial;
-  text-align: center;
-  color: grey;
-}
-
-#busqueda-boton {
-  width: 10%;
-  border-radius: 15%;
-  height: 100%;
-  background-color:black;
-  font-family: Arial;
-  font-weight: normal;
-  border-color:#2CFCA7;
-  color: white;
-  position: relative;
-  border-width: medium;
-}
-
-.login{
-  position: relative;
-  right: 2%;
-  width: 6%;
-  top: 25%;
-
-}
-
- #button-login {
-  padding: 15%;
-  position: relative;
-  width: 100%;
-  border-radius: 10px;
-  border-color: #2CFCA7;
-  background-color: black;
-  font-family: Arial;
-  font-weight: bold;
-  font-size: 15px;
-  color: white;
-  text-align: center;
-  border-width: medium;
-
-}
-
-
-#seccion-login {
-  background-color: black;
-  color:#2CFCA7;
-}
-
-.uk-modal-title {
-  color: white;
-}
-
-.login-usuarios {
-  display: flex;
-  flex-direction: column;
-}
-
-.botones {
-  display: flex;
-  flex-direction: row;
-
-}
-
-#cancelar {
-  color: black;
-  background-color: #2CFCA7;
-  width: 25%;
-
-}
-
-#ingresar {
-  color: black;
-  background-color: #2CFCA7;
-  width: 25%;
-
-}
-
-/*  OPCION NUEVA*/
-
 
 /* STYLE OPCION NUEVA TENGO QUE ARREGLAR LOS ESTILOS*/
 
@@ -410,7 +228,7 @@ ul.Paginas {
 /* FIN STYLE NUEVA OPCION */
 
 
-/* Secion series*/
+/* Seccion series*/
 .content {
   padding-top: 20px;
 }
@@ -435,6 +253,7 @@ ul.Paginas {
   color:#2CFCA7;
 
 }
+
 
 /* Al aire hoy */
 .listaire {
@@ -495,6 +314,19 @@ width: 100%;
 
 .listaP img {
   width: 100%;
+}
+
+/* favoritos */
+.list li {
+  cursor: pointer;
+}
+.list li:hover:after,
+.list li.fav:after{
+  content: ' \2605';
+  color: rgb(255, 203, 0);
+}
+.list li.fav:hover:after {
+  content: ' \2606';
 }
 
  /* footer */

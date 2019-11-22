@@ -10,7 +10,7 @@ window.onload = function () {
     console.log(seriesAire);
 
     for(var i=0; i<seriesAire.length; i++) {
-      listaire.innerHTML += '<li><p>' + seriesAire[i].name + '</p>' + '<a class="alDetalle" href="detalle.html?id=' + seriesAire[i].id+ '">'+ '<img src="' + "https://image.tmdb.org/t/p/original/" + datos.results[i].poster_path + '">' + '</a></li>'
+      listaire.innerHTML += '<li id='+ seriesAire[i].id + '><p>' + seriesAire[i].name + '</p>' + '<a class="alDetalle" href="detalle.html?id=' + seriesAire[i].id+ '">'+ '<img src="' + "https://image.tmdb.org/t/p/original/" + datos.results[i].poster_path + '">' + '</a></li>'
     }
 
 
@@ -28,7 +28,7 @@ window.onload = function () {
   //console.log(seriesMP);
 
   for(var i=0; i<seriesMP.length; i++) {
-    listaMP.innerHTML += '<li><p>' + seriesMP[i].name + '</p>' + '<a class="alDetalle" href="detalle.html?id=' + seriesMP[i].id+ '">'+  '<img src="' + "https://image.tmdb.org/t/p/original/" + seriesMP[i].poster_path + '">' + '</a></li>'
+    listaMP.innerHTML += '<li id='+ seriesMP[i].id + '><p>' + seriesMP[i].name + '</p>' + '<a class="alDetalle" href="detalle.html?id=' + seriesMP[i].id+ '">'+  '<img src="' + "https://image.tmdb.org/t/p/original/" + seriesMP[i].poster_path + '">' + '</a></li>'
   }
 
 })
@@ -45,12 +45,43 @@ var listaP= document.querySelector(".listaP");
 //console.log(seriesMP);
 
 for(var i=0; i<seriesP.length; i++) {
-  listaP.innerHTML += '<li><p>' + seriesP[i].name + '</p>' + '<a class="alDetalle" href="detalle.html?id=' + seriesP[i].id+ '">'+  '<img src="' + "https://image.tmdb.org/t/p/original/" + seriesP[i].poster_path + '">' + '</a></li>'
+  listaP.innerHTML += '<li id='+ seriesP[i].id + '><p>' + seriesP[i].name + '</p>' + '<a class="alDetalle" href="detalle.html?id=' + seriesP[i].id+ '">'+  '<img src="' + "https://image.tmdb.org/t/p/original/" + seriesP[i].poster_path + '">' + '</a></li>'
 }
 
 })
 
+// favoritos by mili y belu xd
 
+
+// get favorites from local storage or empty array
+var favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+console.log(favorites);
+// add class 'fav' to each favorite
+favorites.forEach(function(favorite) {
+  document.getElementById(favorite).className = 'fav';
+
+});
+// register click event listener
+document.querySelector('.list').addEventListener('click', function(e) {
+  var id = e.target.id,
+      item = e.target,
+      index = favorites.indexOf(id);
+  // return if target doesn't have an id (shouldn't happen)
+  if (!id) return;
+  // item is not favorite
+  if (index == -1) {
+    favorites.push(id);
+    item.className = 'fav';
+  // item is already favorite
+  } else {
+    favorites.splice(index, 1);
+    item.className = '';
+  }
+  // store array in local storage
+  localStorage.setItem('favorites', JSON.stringify(favorites));
+});
+
+// local storage stores strings so we use JSON to stringify for storage and parse to get out of storage
 
 
 
