@@ -393,7 +393,7 @@ div.alumnos ul li {
     position: relative;;
     height: 90px;
     z-index: 1000;
-    margin-bottom: 4%;
+    margin-bottom: 3%;
 
   }
 
@@ -466,8 +466,8 @@ div.alumnos ul li {
   }
 
   #busqueda-input {
-    width:75%;
-    height: 100%;
+    width:80%;
+    height: 95%;
     border-radius: 10px;
     border-width: medium;
     position: relative;
@@ -479,7 +479,7 @@ div.alumnos ul li {
   }
 
   .buscador-form {
-    width: 95%;
+    width: 100%;
     height: 75%;
   }
 
@@ -487,7 +487,7 @@ div.alumnos ul li {
     width:80%;
     height: 95%;
     border-radius: 10px;
-    border-width: medium;
+    border-width: thin;
     position: relative;
     border-color: #2CFCA7;
     background-color: black;
@@ -505,7 +505,6 @@ div.alumnos ul li {
 
   #busqueda-boton {
     width: 8%;
-    border-radius: 15%;
     height: 90%;
     background-color:black;
     font-family: Arial;
@@ -513,7 +512,7 @@ div.alumnos ul li {
     border-color:#2CFCA7;
     color: white;
     position: relative;
-    border-width: medium;
+    border-width: thin;
   }
 
   .login{
@@ -581,29 +580,6 @@ div.alumnos ul li {
   /* FIN NUEVA HEADER  */
 
 
-  /*MAIN BODY */
-  .content {
-    padding-top: 15px;
-  }
-
-  .titulo1 {
-    font-family: "Arial";
-    font-size: 40px;
-    text-align: center;
-    color: white;
-}
-
-.titulos {
-    font-family: "Arial";
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #2CFCA7;
-}
-
-.uk-width-1-1 li {
-  width: 25%;
-}
 
   /*FOOTER*/
 
@@ -782,14 +758,6 @@ div.alumnos ul li {
     color: white;
   }
 
-  /* MAIN BODY */
-  .content {
-    padding-top: 10px;
-  }
-
-  .uk-width-1-1 li {
-    width: calc(75% * 1 / 3.001);
-  }
 
   /*FOOTER*/
 

@@ -507,30 +507,6 @@ div.alumnos ul li {
   /* FIN NUEVA HEADER  */
 
 
-  /*MAIN BODY */
-  .content {
-    padding-top: 15px;
-  }
-
-  .titulo1 {
-    font-family: "Arial";
-    font-size: 40px;
-    text-align: center;
-    color: white;
-}
-
-.titulos {
-    font-family: "Arial";
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #2CFCA7;
-}
-
-.uk-width-1-1 li {
-  width: 25%;
-}
-
   /*FOOTER*/
 
   footer {
