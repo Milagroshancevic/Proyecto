@@ -207,6 +207,39 @@ left: 40%;
 
 }
 
+/*-----------INICIO SCROLL INFINITO--------------*/
+#infinite-list {
+  /* We need to limit the height and show a scrollbar */
+  width: 100%;
+  height: 600px;
+  overflow: auto;
+  display: flex;
+  flex direction: row;
+  flex-wrap: wrap;
+
+  /* Optional, only to check that it works with margin/padding */
+  /* margin: 30px; */
+  padding: 20px;
+  border: 10px solid black;
+}
+
+/* Optional eye candy below: */
+ul#infinite-list li {
+  padding: 10px;
+  list-style-type: none;
+  width: 20%;
+}
+ul#infinite-list li:hover {
+  background: #ccc;
+}
+
+ul#infinite-list li img{
+  width: 100%;
+/*-----------FIN SCROLL INFINITO--------------*/
+
+
+
+
 /*FOOTER*/
 footer {
   display: flex;

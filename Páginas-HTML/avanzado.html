@@ -45,7 +45,7 @@
 
 
 
-    <form class="buscadorAvanzado" action="resultadosAvanzado.html" method="GET">
+    <form class="buscadorAvanzado" action="avanzado.html" method="GET">
 
       <label for="generoIncluido">Seleccioná tu género </label>
 
@@ -84,8 +84,30 @@
       <small id="alertFecha" class="complete"></small>
 <!-- es un break simpatico, no nos reten :)  -->
       <br>
-      <button id="buscar-avan-button" type="submit" name="button">BUSCAR</button>
+      <button id="buscar-avan-button" type="submit">BUSCAR</button>
     </form>
+
+    <!-- resultado del buscador avanzado -->
+    <div class="res-buscador-avanzado">
+      <div>
+        <h3 id="resultado-genero-b-a">El resultado de tu búsqueda es</h3>
+        <ul class="genero-buscador-avanzado" id='infinite-list'>
+
+        </ul>
+      </div>
+
+      <div class="fecha-buscador-avanzado">
+
+      </div>
+
+      <div class="orden-buscador-avanzado">
+
+      </div>
+
+
+
+    </div>
+
 
 
 
