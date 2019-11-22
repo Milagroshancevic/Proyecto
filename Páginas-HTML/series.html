@@ -18,14 +18,28 @@
         <img src="../Imágenes/logo-JustSeries.png">
       </div>
       <nav>
-        <ul class="Paginas">
+        <!-- OPCION ORIGINAL -->
+        <!-- <ul class="Paginas">
           <li class="opciones"> <a href="index.html">Home</a> </li>
           <li class="opciones"> <a href="avanzado.html">Explorá</a> </li>
           <li class="opciones"> <a href="generos.html">Géneros</a></li>
 
 
-        </ul>
+        </ul> -->
 
+        <!-- OPCION NUEVA  -->
+
+        <button class="muchasOpciones" id="#boton-opciones" class="uk-button uk-button-default" type="button"><i class="fas fa-bars"></i></button>
+        <div class="opciones-Inicio" class="uk-dropwdown" uk-dropdown>
+    <ul class="Paginas uk-nav uk-dropdown-nav">
+        <li class="opciones uk-nav-header"><a href="index.html">Home</a></li>
+        <li class="opciones uk-nav-header"> <a href="avanzado.html">Explorá</a> </li>
+        <li class="opciones uk-nav-header"> <a href="generos.html">Géneros</a></li>
+
+        <li class="uk-nav-divider"></li>
+
+    </ul>
+  </div>
       </nav>
       <div class="buscador">
         <form class="buscador-form" action="buscador.html" method="get">
@@ -39,9 +53,36 @@
 
 
       <div class="login">
-        <button id="button-login"type="button" name="login">LOGIN</button>
+        <button class="registrate" uk-toggle="target:#my-login" id="button-login my-login" type="button" name="login">LOGIN</button>
 
-      </div>
+      <!-- This is the modal -->
+<div  id="my-login" uk-modal>
+    <div id="seccion-login" class="uk-modal-dialog uk-modal-body">
+        <h2 class="uk-modal-title">LOGIN</h2>
+        <form class="login-usuarios" action="index.html" method="GET">
+
+          <label for="usuario">Usuario</label>
+
+          <input type="text" name="usuario" value="" placeholder="Introduzca su usuario" required>
+          <small id="alertUsuario" class="complete"></small>
+
+          <label for="contraseña">Contraseña</label>
+
+          <input type="password" name="contraseña" value="" placeholder="Introduzca su contraseña" required>
+          <small id="alertContraseña" class="complete"></small>
+
+          <div class="botones">
+  <button id="ingresar" class="uk-button uk-button-primary" type="submit">Ingresar</button>
+  <button id="cancelar" class=" uk-button uk-button-default uk-modal-close" type="button">Cancelar</button>
+
+          </div>
+
+        </form>
+
+
+    </div>
+</div>
+</div>
     </header>
 
 
