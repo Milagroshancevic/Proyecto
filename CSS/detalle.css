@@ -492,32 +492,13 @@ div.alumnos ul li {
     font-size: 25px;
   }
 
-
   .buscador {
     position: absolute;
-    right: 43%;
-    width: 35%;
+    right: 41%;
+    width: 40%;
     height: 50px;
     top: 33%;
 
-  }
-
-  #busqueda-input {
-    width:75%;
-    height: 100%;
-    border-radius: 10px;
-    border-width: medium;
-    position: relative;
-    border-color: #2CFCA7;
-    background-color: black;
-    color: white;
-
-
-  }
-
-  .buscador-form {
-    width: 95%;
-    height: 75%;
   }
 
   #busqueda-input {
@@ -533,25 +514,43 @@ div.alumnos ul li {
 
   }
 
+  .buscador-form {
+    width: 100%;
+    height: 75%;
+  }
+
+  #busqueda-input {
+    width:80%;
+    height: 95%;
+    border-radius: 10px;
+    border-width: thin;
+    position: relative;
+    border-color: #2CFCA7;
+    background-color: black;
+    color: white;
+
+
+  }
+
   #busqueda-input::-webkit-input-placeholder {
-    font-size: 15px;
+    font-size: 10px;
     font-family: Arial;
     text-align: center;
     color: grey;
   }
 
   #busqueda-boton {
-    width: 8%;
-    border-radius: 15%;
-    height: 90%;
+    width: 14%;
+    height: 80%;
     background-color:black;
     font-family: Arial;
     font-weight: normal;
     border-color:#2CFCA7;
     color: white;
     position: relative;
-    border-width: medium;
+    border-width: thin;
   }
+
 
   .login{
     position: absolute;
@@ -614,8 +613,127 @@ div.alumnos ul li {
 
   }
 
-
   /* FIN NUEVA HEADER  */
+
+  /* SERIES DESCRIPCION */
+
+  /* este es el titulo de la pagina */
+  .descripcion {
+    font-family: "Arial";
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    margin: 2%;
+  }
+  /* esto es titulo de la pagina  + detalles completo */
+  .details {
+    font-family: "Arial";
+    font-size: 20px;
+    width: 100%;
+    /* padding-top: 110px; */
+  }
+  /* este es el detalle completo de la serie */
+  .descri-contenedor{
+    width: 100%;
+    position: relative;
+  }
+
+  /* este es el detalle de texto y el ver recomendaciones */
+  .descri {
+    width: 40%;
+    position: relative;
+    left:50%;
+    bottom: 170px;
+    font-size: 13px;
+
+  }
+
+  .descri ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .listaGen {
+    width: 50%;
+    margin-left: 3%;
+    margin-right: 3%;
+
+  }
+
+  /* contenedor del poster */
+  .imagen {
+    width: 50%;
+  }
+  /* nombre de la serie */
+  .nomDetalle {
+    font-size: 16px;
+    color:#2CFCA7;
+    text-decoration: underline;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    width: 40%;
+  }
+
+
+  /* este es el id del genero */
+  .id-detalles {
+    display: none;
+  }
+
+  /* poster */
+  .imagen-detalles {
+    width: 75%;
+    position: relative;
+    left: 3%;
+  }
+
+  /* este es el trailer */
+  .youtube {
+    position: relative;
+    left: 12%;
+    top: 150%;
+    margin-bottom: 3%;
+    width: 75%;
+  }
+
+  iframe {
+    width: 100%;
+
+  }
+
+  /* boton de ver recomendaciones */
+  #button-reco{
+  border-radius: 10px;
+  color: white;
+  background: black;
+  border-width: medium;
+  border-color: #2CFCA7;
+  padding: 2%;
+
+  }
+
+  #button-reco:hover{
+    color: black;
+    background-color: white;
+  }
+
+  /* container de las recomendadas */
+  .recomend-container{
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    top: 115%;
+    padding-right: 2%;
+  }
+  }
+
+  /* posters de las recomendaciones */
+  .posterRecomend{
+    width: 100%;
+  }
 
 
 
@@ -795,6 +913,127 @@ div.alumnos ul li {
     background-color: black;
     color: white;
   }
+
+/* BODY */
+
+  /* este es el titulo de la pagina */
+  .descripcion {
+    font-family: "Arial";
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    margin: 2%;
+  }
+  /* esto es titulo de la pagina  + detalles completo */
+  .details {
+    font-family: "Arial";
+    font-size: 20px;
+    width: 100%;
+    /* padding-top: 110px; */
+  }
+  /* este es el detalle completo de la serie */
+  .descri-contenedor{
+    width: 100%;
+    position: relative;
+  }
+
+  /* este es el detalle de texto y el ver recomendaciones */
+  .descri {
+    width: 40%;
+    position: relative;
+    left:50%;
+    bottom: 320px;
+    font-size: 15px;
+
+  }
+
+  .descri ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .listaGen {
+    width: 30%;
+    margin-left: 3%;
+    margin-right: 3%;
+
+  }
+
+  /* contenedor del poster */
+  .imagen {
+    width: 50%;
+  }
+  /* nombre de la serie */
+  .nomDetalle {
+    font-size: 25px;
+    color:#2CFCA7;
+    text-decoration: underline;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    width: 30%;
+  }
+
+
+  /* este es el id del genero */
+  .id-detalles {
+    display: none;
+  }
+
+  /* poster */
+  .imagen-detalles {
+    width: 75%;
+    position: relative;
+    left: 3%;
+  }
+
+  /* este es el trailer */
+  .youtube {
+    position: relative;
+    left: 10%;
+    top: 150%;
+    margin-bottom: 3%;
+    width: 80%;
+  }
+
+  /* boton de ver recomendaciones */
+  #button-reco{
+  border-radius: 10px;
+  color: white;
+  background: black;
+  border-width: medium;
+  border-color: #2CFCA7;
+  padding: 2%;
+
+  }
+
+  #button-reco:hover{
+    color: black;
+    background-color: white;
+  }
+
+  /* container de las recomendadas */
+  .recomend-container{
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    top: 120%;
+    padding-right: 2%;
+  }
+  }
+
+  /* posters de las recomendaciones */
+  .posterRecomend{
+    width: 100%;
+  }
+
+
+  iframe {
+    width: 100%;
+  }
+
 
 
 

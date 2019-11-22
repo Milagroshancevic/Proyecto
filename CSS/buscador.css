@@ -233,7 +233,7 @@ ul.Paginas {
 /* buscador grande*/
 .resultados-buscador{
   position: relative;
-  top: 105px;
+  top: 10px;
   margin-bottom: 25%;
 }
 
@@ -485,7 +485,7 @@ div.alumnos ul li {
   }
 
   #busqueda-input::-webkit-input-placeholder {
-    font-size: 15px;
+    font-size: 10px;
     font-family: Arial;
     text-align: center;
     color: grey;

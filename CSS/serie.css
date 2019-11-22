@@ -225,7 +225,8 @@ ul.Paginas {
 
 /*MAIN BODY*/
 .contenedorSxG {
-  padding-top: 15%;
+  padding-top: 10px;
+  padding-bottom: 50px;
 }
 
  /* footer */
@@ -384,29 +385,11 @@ div.alumnos ul li {
 
   .buscador {
     position: absolute;
-    right: 43%;
-    width: 35%;
+    right: 41%;
+    width: 40%;
     height: 50px;
     top: 33%;
 
-  }
-
-  #busqueda-input {
-    width:75%;
-    height: 100%;
-    border-radius: 10px;
-    border-width: medium;
-    position: relative;
-    border-color: #2CFCA7;
-    background-color: black;
-    color: white;
-
-
-  }
-
-  .buscador-form {
-    width: 95%;
-    height: 75%;
   }
 
   #busqueda-input {
@@ -422,26 +405,43 @@ div.alumnos ul li {
 
   }
 
+  .buscador-form {
+    width: 100%;
+    height: 75%;
+  }
+
+  #busqueda-input {
+    width:80%;
+    height: 95%;
+    border-radius: 10px;
+    border-width: thin;
+    position: relative;
+    border-color: #2CFCA7;
+    background-color: black;
+    color: white;
+
+
+  }
+
   #busqueda-input::-webkit-input-placeholder {
-    font-size: 15px;
+    font-size: 10px;
     font-family: Arial;
     text-align: center;
     color: grey;
   }
 
   #busqueda-boton {
-    width: 8%;
-    border-radius: 15%;
-    height: 90%;
+    width: 14%;
+    height: 80%;
     background-color:black;
     font-family: Arial;
     font-weight: normal;
     border-color:#2CFCA7;
     color: white;
     position: relative;
-    border-width: medium;
+    border-width: thin;
   }
-
+  
   .login{
     position: absolute;
     right: 3%;
