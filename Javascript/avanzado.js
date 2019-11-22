@@ -121,12 +121,12 @@ var definirFecha = document.querySelector(".fecha").selectedIndex;
 
 // insertamos la data en el html con el scroll infinito
 
-   var listElm = document.querySelector('#infinite-list');
+var listElm = document.querySelector('#infinite-list');
 
  // Add 20 items.
  var nextItem = 1;
  var loadMore = function() {
-   // este for debe hacer el fetch por pagina
+   // este for debe hacer el fetch por pagina --> solo pusimos 20 porque sino tardan años luz en cargar los posters, (cuando poniamos los nombres solamente nos cargaba mucho mas rapido con 80 pages)
    for(var k=1; k<= 20 ; k++){
 
      var ep = "https://api.themoviedb.org/3/discover/tv?api_key=4c34fda4463cc4b5610955320cdc1b52&page="+ k + ordenSerie + estrenoSerie + incluidoSerie + excluidoSerie

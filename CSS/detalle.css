@@ -175,7 +175,7 @@ ul.Paginas {
   font-family: "Arial";
   font-size: 20px;
   width: 100%;
-  padding-top: 110px;
+  /* padding-top: 110px; */
 }
 /* este es el detalle completo de la serie */
 .descri-contenedor{
@@ -188,7 +188,7 @@ ul.Paginas {
   width: 40%;
   position: relative;
   left:50%;
-  bottom: 750px;
+  bottom: 700px;
   font-size: 17px;
 
 }
@@ -216,9 +216,9 @@ ul.Paginas {
   color:#2CFCA7;
   text-decoration: underline;
   position: absolute;
-  left: 65%;
+  left: 50%;
   top: 0%;
-  width: 10%;
+  width: 30%;
 }
 
 
@@ -238,7 +238,7 @@ ul.Paginas {
 .youtube {
   position: absolute;
   left: 50%;
-  top: 175%;
+  top: 150%;
   margin-bottom: 3%;
   width: 40%;
 }
